@@ -849,7 +849,7 @@
       },
       "objectsGroups": [
         {
-          "name": "Block",
+          "name": "Blocks",
           "objects": [
             {
               "name": "BlockP1"
@@ -863,10 +863,7 @@
               "name": "Floor"
             },
             {
-              "name": "CoreP2"
-            },
-            {
-              "name": "CoreP1"
+              "name": "Core"
             },
             {
               "name": "BlockP1"
@@ -897,7 +894,7 @@
           "persistentUuid": "8b3e15d9-1b88-4a25-8712-78351163043f",
           "width": 480,
           "x": 0,
-          "y": 144,
+          "y": 272,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -910,14 +907,42 @@
           "layer": "",
           "locked": false,
           "name": "BlockP1",
-          "persistentUuid": "0ba69246-c381-4726-919a-23109d004a2d",
+          "persistentUuid": "672f3537-91b8-4466-aca2-62a72351edcd",
           "width": 16,
-          "x": 112,
-          "y": 48,
+          "x": 80,
+          "y": -32,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Core",
+          "persistentUuid": "365b4a9d-4eac-42c7-a856-cef9a9f7272e",
+          "width": 0,
+          "x": 80,
+          "y": 240,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player1"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -926,30 +951,20 @@
           "layer": "",
           "locked": false,
           "name": "BlockP1",
-          "persistentUuid": "672f3537-91b8-4466-aca2-62a72351edcd",
-          "width": 48,
-          "x": 80,
+          "persistentUuid": "c371c615-705f-4dee-8c1c-02ac771a01b6",
+          "width": 16,
+          "x": 400,
           "y": -32,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 48,
-          "layer": "",
-          "locked": false,
-          "name": "BlockP1",
-          "persistentUuid": "b8d0bbc6-a42d-4961-989b-977725c9673a",
-          "width": 16,
-          "x": 80,
-          "y": -112,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player2"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -957,15 +972,21 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "CoreP1",
-          "persistentUuid": "365b4a9d-4eac-42c7-a856-cef9a9f7272e",
+          "name": "Core",
+          "persistentUuid": "57a3b1dd-f8bd-4d58-95da-f5a2a4c9d61c",
           "width": 0,
-          "x": 80,
-          "y": 112,
+          "x": 368,
+          "y": 240,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Variable",
+              "type": "string",
+              "value": "Player2"
+            }
+          ]
         }
       ],
       "objects": [
@@ -1051,47 +1072,7 @@
           "behaviors": []
         },
         {
-          "name": "CoreP2",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewObject",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\sprites\\NewObject-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "CoreP1",
+          "name": "Core",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1155,7 +1136,7 @@
                 "value": "ResetObjectTimer"
               },
               "parameters": [
-                "Block",
+                "Blocks",
                 "\"tetris\""
               ],
               "subInstructions": []
@@ -1174,8 +1155,8 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Block",
-                "Active",
+                "Blocks",
+                "Fixed",
                 "False"
               ],
               "subInstructions": []
@@ -1194,7 +1175,7 @@
                     "value": "CompareObjectTimer"
                   },
                   "parameters": [
-                    "Block",
+                    "Blocks",
                     "\"tetris\"",
                     ">=",
                     "Variable(BlockSpeed)"
@@ -1209,7 +1190,7 @@
                     "value": "MettreY"
                   },
                   "parameters": [
-                    "Block",
+                    "Blocks",
                     "+",
                     "Variable(BlockMoveDIstance)"
                   ],
@@ -1221,20 +1202,8 @@
                     "value": "ResetObjectTimer"
                   },
                   "parameters": [
-                    "Block",
+                    "Blocks",
                     "\"tetris\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Block Y: \" + ToString(BlockP1.Y())",
-                    "",
-                    ""
                   ],
                   "subInstructions": []
                 }
@@ -1251,25 +1220,16 @@
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "CollisionNP"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Block",
-                    "Floors",
-                    "",
-                    "",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ]
+              "parameters": [
+                "Blocks",
+                "Floors",
+                "",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [],
@@ -1285,8 +1245,8 @@
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "Block",
-                    "Active",
+                    "Blocks",
+                    "Fixed",
                     "False"
                   ],
                   "subInstructions": []
@@ -1299,9 +1259,9 @@
                     "value": "MettreY"
                   },
                   "parameters": [
-                    "Block",
-                    "+",
-                    "-Variable(BlockMoveDIstance)"
+                    "Blocks",
+                    "-",
+                    "Variable(BlockMoveDIstance)"
                   ],
                   "subInstructions": []
                 },
@@ -1311,8 +1271,8 @@
                     "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "Block",
-                    "Active",
+                    "Blocks",
+                    "Fixed",
                     "True"
                   ],
                   "subInstructions": []
@@ -1323,8 +1283,331 @@
                     "value": "RemoveObjectTimer"
                   },
                   "parameters": [
-                    "Block",
+                    "Blocks",
                     "\"tetris\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Input",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "a"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Fixed",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Player",
+                        "=",
+                        "\"Player1\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "-",
+                    "Variable(BlockMoveDIstance)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "d"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Fixed",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Player",
+                        "=",
+                        "\"Player1\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "+",
+                    "Variable(BlockMoveDIstance)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Fixed",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Player",
+                        "=",
+                        "\"Player2\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "-",
+                    "Variable(BlockMoveDIstance)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Fixed",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Player",
+                        "=",
+                        "\"Player2\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "+",
+                    "Variable(BlockMoveDIstance)"
                   ],
                   "subInstructions": []
                 }
