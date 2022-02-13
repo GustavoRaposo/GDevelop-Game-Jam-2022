@@ -844,7 +844,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.4800000000000004,
+        "zoomFactor": 1.130000000000002,
         "windowMask": false
       },
       "objectsGroups": [
@@ -853,9 +853,6 @@
           "objects": [
             {
               "name": "BlockP1"
-            },
-            {
-              "name": "BlockP2"
             }
           ]
         },
@@ -872,29 +869,24 @@
               "name": "CoreP1"
             },
             {
-              "name": "BlockFixed"
+              "name": "BlockP1"
             }
           ]
         }
       ],
-      "variables": [],
-      "instances": [
+      "variables": [
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 16,
-          "layer": "",
-          "locked": false,
-          "name": "BlockP1",
-          "persistentUuid": "d3c2590e-566f-4fde-b3ab-16a38d7fb091",
-          "width": 16,
-          "x": 48,
-          "y": 64,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
+          "name": "BlockSpeed",
+          "type": "number",
+          "value": 0.5
         },
+        {
+          "name": "BlockMoveDIstance",
+          "type": "number",
+          "value": 16
+        }
+      ],
+      "instances": [
         {
           "angle": 0,
           "customSize": true,
@@ -913,31 +905,47 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 16,
           "layer": "",
           "locked": false,
-          "name": "BlockP2",
-          "persistentUuid": "c312dc1b-caff-4c60-bcc0-cadee071569f",
-          "width": 0,
-          "x": 384,
-          "y": 32,
-          "zOrder": 3,
+          "name": "BlockP1",
+          "persistentUuid": "0ba69246-c381-4726-919a-23109d004a2d",
+          "width": 16,
+          "x": 112,
+          "y": 48,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 16,
           "layer": "",
           "locked": false,
           "name": "BlockP1",
-          "persistentUuid": "0ba69246-c381-4726-919a-23109d004a2d",
-          "width": 0,
-          "x": 48,
-          "y": 32,
+          "persistentUuid": "672f3537-91b8-4466-aca2-62a72351edcd",
+          "width": 48,
+          "x": 80,
+          "y": -32,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 48,
+          "layer": "",
+          "locked": false,
+          "name": "BlockP1",
+          "persistentUuid": "b8d0bbc6-a42d-4961-989b-977725c9673a",
+          "width": 16,
+          "x": 80,
+          "y": -112,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -949,142 +957,18 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "BlockP2",
-          "persistentUuid": "8a96097d-7462-4529-a03f-ea5baa41c933",
-          "width": 0,
-          "x": 400,
-          "y": 32,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
           "name": "CoreP1",
-          "persistentUuid": "91e16909-8805-4861-8060-abd7c5599ddd",
+          "persistentUuid": "365b4a9d-4eac-42c7-a856-cef9a9f7272e",
           "width": 0,
-          "x": 32,
+          "x": 80,
           "y": 112,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "CoreP2",
-          "persistentUuid": "9d14d7c5-595d-4a4f-8375-8ec996ab94f0",
-          "width": 0,
-          "x": 400,
-          "y": 112,
-          "zOrder": 8,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "name": "BlockFixed",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Health",
-              "type": "string",
-              "value": "3"
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Block2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\sprites\\Block2-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "BlockP2",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Health",
-              "type": "string",
-              "value": "3"
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Block",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\sprites\\Block-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "BlockP1",
           "tags": "",
@@ -1095,6 +979,11 @@
               "name": "Health",
               "type": "string",
               "value": "3"
+            },
+            {
+              "name": "Fixed",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -1109,7 +998,7 @@
                   "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\sprites\\Block-1.png",
                       "points": [],
                       "originPoint": {
@@ -1123,7 +1012,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1263,55 +1171,77 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CompareObjectTimer"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "Block",
-                "\"tetris\"",
-                ">=",
-                "0.5"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BoundingBoxBottom"
-              },
-              "parameters": [
-                "Block",
-                "<",
-                "Floors.BoundingBoxTop()"
+                "Active",
+                "False"
               ],
               "subInstructions": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "MettreY"
-              },
-              "parameters": [
-                "Block",
-                "+",
-                "8"
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Block",
+                    "\"tetris\"",
+                    ">=",
+                    "Variable(BlockSpeed)"
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Block",
-                "\"tetris\""
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Block",
+                    "+",
+                    "Variable(BlockMoveDIstance)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Block",
+                    "\"tetris\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Block Y: \" + ToString(BlockP1.Y())",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "events": []
             }
-          ],
-          "events": []
+          ]
         },
         {
           "disabled": false,
@@ -1328,126 +1258,80 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BoundingBoxBottom"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
-                    "BlockP1",
-                    "=",
-                    "Floor.BoundingBoxTop()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BoundingBoxBottom"
-                  },
-                  "parameters": [
-                    "BlockP1",
-                    "=",
-                    "BlockFixed.BoundingBoxTop()"
+                    "Block",
+                    "Floors",
+                    "",
+                    "",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "Block2",
-                "BlockFixed",
-                "BlockP1.X()",
-                "BlockP1.Y()",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "BlockP1",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BoundingBoxBottom"
+                    "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "BlockP2",
-                    "=",
-                    "Floor.BoundingBoxTop()"
+                    "Block",
+                    "Active",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Block",
+                    "+",
+                    "-Variable(BlockMoveDIstance)"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BoundingBoxBottom"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "BlockP2",
-                    "=",
-                    "BlockFixed.BoundingBoxTop()"
+                    "Block",
+                    "Active",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Block",
+                    "\"tetris\""
                   ],
                   "subInstructions": []
                 }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "Block2",
-                "BlockFixed",
-                "BlockP2.X()",
-                "BlockP2.Y()",
-                ""
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "BlockP2",
-                ""
-              ],
-              "subInstructions": []
+              "events": []
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "layers": [
