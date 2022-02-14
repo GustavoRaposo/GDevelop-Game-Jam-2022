@@ -1053,43 +1053,15 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Spawn",
-          "persistentUuid": "74c0d7dc-69ee-4ca2-9b88-3b051a4ed2ce",
+          "name": "Block",
+          "persistentUuid": "6bcaa432-2cb1-4e78-8628-3cdbe863e8e6",
           "width": 0,
-          "x": 64,
-          "y": -80,
+          "x": 48,
+          "y": -48,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Player",
-              "type": "string",
-              "value": "\"Player1\""
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Spawn",
-          "persistentUuid": "4528fe79-6bed-4a1c-a03c-5b1d85b823ad",
-          "width": 0,
-          "x": 368,
-          "y": -80,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Player",
-              "type": "string",
-              "value": "Player2"
-            }
-          ]
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1108,6 +1080,11 @@
               "name": "Fixed",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player1"
             }
           ],
           "effects": [],
