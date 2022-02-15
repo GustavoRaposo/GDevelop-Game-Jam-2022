@@ -1075,7 +1075,7 @@
           "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
           "width": 32,
           "x": 80,
-          "y": 96,
+          "y": -64,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1097,7 +1097,7 @@
           "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
           "width": 32,
           "x": 368,
-          "y": 160,
+          "y": -64,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -2686,20 +2686,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Mama nois\"",
-                    "\"warning\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             }
           ],
