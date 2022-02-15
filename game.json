@@ -871,6 +871,9 @@
           "objects": [
             {
               "name": "Block"
+            },
+            {
+              "name": "Block2x2"
             }
           ]
         },
@@ -904,6 +907,21 @@
           "name": "Turn",
           "type": "string",
           "value": "build"
+        },
+        {
+          "name": "BuildState",
+          "type": "string",
+          "value": "start"
+        },
+        {
+          "name": "TurnBlockCountPlayer1",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "TurnBlockCountPlayer2",
+          "type": "number",
+          "value": 5
         }
       ],
       "instances": [
@@ -1049,22 +1067,125 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 32,
           "layer": "",
           "locked": false,
-          "name": "Block",
-          "persistentUuid": "6bcaa432-2cb1-4e78-8628-3cdbe863e8e6",
-          "width": 0,
-          "x": 48,
-          "y": -48,
-          "zOrder": 9,
+          "name": "Spawn",
+          "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
+          "width": 32,
+          "x": 80,
+          "y": 96,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Spawn",
+          "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
+          "width": 32,
+          "x": 368,
+          "y": 160,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player2"
+            }
+          ]
         }
       ],
       "objects": [
+        {
+          "name": "Block2x2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Health",
+              "type": "string",
+              "value": "3"
+            },
+            {
+              "name": "Fixed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Player",
+              "type": "string",
+              "value": "Player1"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Block",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\sprites\\Block-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "Block",
           "tags": "",
@@ -1302,571 +1423,6 @@
               "actions": [],
               "events": [
                 {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": true,
-                  "name": "Inputs",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "a"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Player",
-                                    "=",
-                                    "\"Player1\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "-",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Floors",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "+",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "d"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Player",
-                                    "=",
-                                    "\"Player1\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "+",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Floors",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "-",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "Left"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Player",
-                                    "=",
-                                    "\"Player2\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "-",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Floors",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "+",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "Right"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Player",
-                                    "=",
-                                    "\"Player2\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "+",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Floors",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "Blocks",
-                                    "Fixed",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreX"
-                              },
-                              "parameters": [
-                                "Blocks",
-                                "-",
-                                "Variable(BlockMoveDIstance)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ],
-                  "parameters": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Block Movement And Collision",
-                  "comment2": ""
-                },
-                {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
@@ -1874,12 +1430,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ObjectVariableAsBoolean"
+                        "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Blocks",
-                        "Fixed",
-                        "False"
+                        "BuildState",
+                        "=",
+                        "\"start\""
                       ],
                       "subInstructions": []
                     }
@@ -1894,13 +1450,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "CompareObjectTimer"
+                            "value": "VarObjetTxt"
                           },
                           "parameters": [
-                            "Blocks",
-                            "\"tetris\"",
-                            ">=",
-                            "Variable(BlockSpeed)"
+                            "Spawn",
+                            "Player",
+                            "=",
+                            "\"Player1\""
                           ],
                           "subInstructions": []
                         }
@@ -1909,12 +1465,27 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "MettreY"
+                            "value": "Create"
                           },
                           "parameters": [
-                            "Blocks",
-                            "+",
-                            "Variable(BlockMoveDIstance)"
+                            "",
+                            "Block",
+                            "Spawn.CenterX()",
+                            "Spawn.CenterY()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Block",
+                            "Player",
+                            "=",
+                            "\"Player1\""
                           ],
                           "subInstructions": []
                         },
@@ -1924,8 +1495,114 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "Blocks",
+                            "Block",
                             "\"tetris\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "TurnBlockCountPlayer1",
+                            "-",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Spawn",
+                            "Player",
+                            "=",
+                            "\"Player2\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Block",
+                            "Spawn.CenterX()",
+                            "Spawn.CenterY()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Block",
+                            "Player",
+                            "=",
+                            "\"Player2\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Block",
+                            "\"tetris\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "TurnBlockCountPlayer2",
+                            "-",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "BuildState",
+                            "=",
+                            "\"main\""
                           ],
                           "subInstructions": []
                         }
@@ -1942,20 +1619,583 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "CollisionNP"
+                        "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Blocks",
-                        "Floors",
-                        "",
-                        "",
-                        "yes"
+                        "BuildState",
+                        "=",
+                        "\"main\""
                       ],
                       "subInstructions": []
                     }
                   ],
                   "actions": [],
                   "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "disabled": false,
+                      "folded": true,
+                      "name": "Inputs",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "a"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player1\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "-",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "CollisionNP"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Floors",
+                                        "",
+                                        "",
+                                        "yes"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "+",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player1\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "+",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "CollisionNP"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Floors",
+                                        "",
+                                        "",
+                                        "yes"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "-",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player2\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "-",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "CollisionNP"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Floors",
+                                        "",
+                                        "",
+                                        "yes"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "+",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "Right"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player2\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "+",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "CollisionNP"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Floors",
+                                        "",
+                                        "",
+                                        "yes"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Fixed",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Blocks",
+                                    "-",
+                                    "Variable(BlockMoveDIstance)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Block Movement And Collision",
+                      "comment2": ""
+                    },
                     {
                       "disabled": false,
                       "folded": false,
@@ -1974,44 +2214,441 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "Blocks",
-                            "-",
-                            "Variable(BlockMoveDIstance)"
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "\"tetris\"",
+                                ">=",
+                                "Variable(BlockSpeed)"
+                              ],
+                              "subInstructions": []
+                            }
                           ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "Blocks",
-                            "Fixed",
-                            "True"
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreY"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "+",
+                                "Variable(BlockMoveDIstance)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "\"tetris\""
+                              ],
+                              "subInstructions": []
+                            }
                           ],
-                          "subInstructions": []
-                        },
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "RemoveObjectTimer"
+                            "value": "CollisionNP"
                           },
                           "parameters": [
                             "Blocks",
-                            "\"tetris\""
+                            "Floors",
+                            "",
+                            "",
+                            "yes"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "Fixed",
+                                "False"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreY"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "-",
+                                "Variable(BlockMoveDIstance)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "Fixed",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RemoveObjectTimer"
+                              },
+                              "parameters": [
+                                "Blocks",
+                                "\"tetris\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer1",
+                                        "=",
+                                        "0"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer2",
+                                        "=",
+                                        "0"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Turn",
+                                    "=",
+                                    "\"battle\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Create New Block",
+                              "comment2": ""
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player1\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer1",
+                                        ">",
+                                        "0"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Spawn",
+                                        "Player",
+                                        "=",
+                                        "\"Player1\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Block",
+                                        "Spawn.CenterX()",
+                                        "Spawn.CenterY()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Block",
+                                        "Player",
+                                        "=",
+                                        "\"Player1\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "Block",
+                                        "\"tetris\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer1",
+                                        "-",
+                                        "1"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BuiltinCommonInstructions::And"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Blocks",
+                                        "Player",
+                                        "=",
+                                        "\"Player2\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer2",
+                                        ">",
+                                        "0"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Spawn",
+                                        "Player",
+                                        "=",
+                                        "\"Player2\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Block",
+                                        "Spawn.CenterX()",
+                                        "Spawn.CenterY()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Block",
+                                        "Player",
+                                        "=",
+                                        "\"Player2\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "Block",
+                                        "\"tetris\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "TurnBlockCountPlayer2",
+                                        "-",
+                                        "1"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -2026,7 +2663,7 @@
           "colorR": 245,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Battle Turn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2049,7 +2686,20 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Mama nois\"",
+                    "\"warning\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": []
             }
           ],
@@ -2061,7 +2711,7 @@
           "colorR": 155,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Cheats",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
