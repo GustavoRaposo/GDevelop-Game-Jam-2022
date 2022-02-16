@@ -108,6 +108,96 @@
           "value": "BlockI"
         }
       ]
+    },
+    {
+      "name": "TurnBlocks",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "TurnBlocksPlayer1",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "TurnBlocksPlayer2",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        }
+      ]
     }
   ],
   "instances": [
@@ -884,6 +974,61 @@
                         "BuildState",
                         "=",
                         "\"main\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "TurnBlocks",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "TurnBlocks",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "TurnBlocks",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "TurnBlocks",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "TurnBlocks",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
                       ],
                       "subInstructions": []
                     }
