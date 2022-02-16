@@ -597,6 +597,51 @@
         "name": "assets\\sprites\\Bullet-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockL-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockL-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockI-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockI-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -622,7 +667,12 @@
       "referenceTo": "/layouts/prototypecannonblock"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/createblock"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

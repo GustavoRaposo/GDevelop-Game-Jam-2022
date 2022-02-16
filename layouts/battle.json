@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0300000000000007,
+    "zoomFactor": 1.0550000000000006,
     "windowMask": false
   },
   "objectsGroups": [
@@ -30,9 +30,6 @@
       "objects": [
         {
           "name": "Block"
-        },
-        {
-          "name": "Block2x2"
         }
       ]
     },
@@ -81,6 +78,36 @@
       "name": "TurnBlockCountPlayer2",
       "type": "number",
       "value": 5
+    },
+    {
+      "name": "BaseBlocks",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "Block"
+        },
+        {
+          "type": "string",
+          "value": "Block1x2"
+        },
+        {
+          "type": "string",
+          "value": "Block2x1"
+        },
+        {
+          "type": "string",
+          "value": "Block2x2"
+        },
+        {
+          "type": "string",
+          "value": "BlockL"
+        },
+        {
+          "type": "string",
+          "value": "BlockI"
+        }
+      ]
     }
   ],
   "instances": [
@@ -227,14 +254,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 32,
+      "height": 16,
       "layer": "",
       "locked": false,
       "name": "Spawn",
       "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
-      "width": 32,
+      "width": 16,
       "x": 80,
-      "y": -64,
+      "y": -48,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -249,14 +276,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 32,
+      "height": 16,
       "layer": "",
       "locked": false,
       "name": "Spawn",
       "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
-      "width": 32,
-      "x": 368,
-      "y": -64,
+      "width": 16,
+      "x": 384,
+      "y": -48,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -271,81 +298,6 @@
   ],
   "objects": [
     {
-      "name": "Block2x2",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Health",
-          "type": "string",
-          "value": "3"
-        },
-        {
-          "name": "Fixed",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Player",
-          "type": "string",
-          "value": "Player1"
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Block",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\sprites\\Block-1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Block",
       "tags": "",
       "type": "Sprite",
@@ -354,7 +306,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "3"
+          "value": "2"
         },
         {
           "name": "Fixed",
@@ -491,6 +443,313 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "name": "Block1x2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "string",
+          "value": "3"
+        },
+        {
+          "name": "Fixed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Block1x2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block1x2-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block2x1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "string",
+          "value": "3"
+        },
+        {
+          "name": "Fixed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Block2x1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block2x2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "string",
+          "value": "4"
+        },
+        {
+          "name": "Fixed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Block2x2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x2-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BlockL",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "string",
+          "value": "4"
+        },
+        {
+          "name": "Fixed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BlockL",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\sprites\\BlockL-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      },
+                      {
+                        "x": 32,
+                        "y": 48
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BlockI",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "string",
+          "value": "5"
+        },
+        {
+          "name": "Fixed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BlockI",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BlockI-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -604,148 +863,11 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Spawn",
-                        "Player",
-                        "=",
-                        "\"Player1\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Block",
-                        "Spawn.CenterX()",
-                        "Spawn.CenterY()",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Block",
-                        "Player",
-                        "=",
-                        "\"Player1\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Block",
-                        "\"tetris\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "TurnBlockCountPlayer1",
-                        "-",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Spawn",
-                        "Player",
-                        "=",
-                        "\"Player2\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Block",
-                        "Spawn.CenterX()",
-                        "Spawn.CenterY()",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Block",
-                        "Player",
-                        "=",
-                        "\"Player2\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Block",
-                        "\"tetris\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "TurnBlockCountPlayer2",
-                        "-",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "CreateBlock"
                 },
                 {
                   "disabled": false,
