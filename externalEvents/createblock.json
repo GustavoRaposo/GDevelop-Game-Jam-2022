@@ -26,13 +26,11 @@
         {
           "type": {
             "inverted": false,
-            "value": "Create"
+            "value": "DebuggerTools::ConsoleLog"
           },
           "parameters": [
-            "",
-            "Block",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "VariableString(TurnBlockCountPlayer1)",
+            "\"warning\"",
             ""
           ],
           "subInstructions": []
@@ -40,41 +38,153 @@
         {
           "type": {
             "inverted": false,
-            "value": "ModVarObjetTxt"
+            "value": "DebuggerTools::ConsoleLog"
           },
           "parameters": [
-            "Block",
-            "Player",
-            "=",
-            "\"Player1\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Block",
-            "\"tetris\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "TurnBlockCountPlayer1",
-            "-",
-            "1"
+            "VariableString(TurnBlocks[Variable(TurnBlockCountPlayer1)])",
+            "\"warning\"",
+            ""
           ],
           "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentBlock",
+                "=",
+                "VariableString(TurnBlocks[Variable(TurnBlockCountPlayer1)])"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"Player1\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CreateBlocksForPlayer"
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "CurrentBlock",
+                "=",
+                "\"Block\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Block",
+                "Spawn.CenterX()",
+                "Spawn.CenterY()",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Block",
+                "Player",
+                "=",
+                "\"Player1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Block",
+                "\"tetris\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TurnBlockCountPlayer1",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TurnBlockCountPlayer1",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
@@ -95,59 +205,72 @@
           "subInstructions": []
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "inverted": false,
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Block",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
-            ""
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentBlock",
+                "=",
+                "VariableString(TurnBlocks[Variable(TurnBlockCountPlayer2)])"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"Player2\""
+              ],
+              "subInstructions": []
+            }
           ],
-          "subInstructions": []
+          "events": []
         },
         {
-          "type": {
-            "inverted": false,
-            "value": "ModVarObjetTxt"
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
           },
-          "parameters": [
-            "Block",
-            "Player",
-            "=",
-            "\"Player2\""
-          ],
-          "subInstructions": []
+          "target": "CreateBlocksForPlayer"
         },
         {
-          "type": {
-            "inverted": false,
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Block",
-            "\"tetris\""
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TurnBlockCountPlayer2",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
           ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "TurnBlockCountPlayer2",
-            "-",
-            "1"
-          ],
-          "subInstructions": []
+          "events": []
         }
-      ],
-      "events": []
+      ]
     }
   ]
 }

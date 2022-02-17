@@ -30,6 +30,21 @@
       "objects": [
         {
           "name": "Block"
+        },
+        {
+          "name": "Block1x2"
+        },
+        {
+          "name": "Block2x1"
+        },
+        {
+          "name": "Block2x2"
+        },
+        {
+          "name": "BlockL"
+        },
+        {
+          "name": "BlockI"
         }
       ]
     },
@@ -44,6 +59,21 @@
         },
         {
           "name": "Block"
+        },
+        {
+          "name": "Block2x1"
+        },
+        {
+          "name": "Block1x2"
+        },
+        {
+          "name": "Block2x2"
+        },
+        {
+          "name": "BlockI"
+        },
+        {
+          "name": "BlockL"
         }
       ]
     }
@@ -52,7 +82,7 @@
     {
       "name": "BlockSpeed",
       "type": "number",
-      "value": 0.5
+      "value": 0.2
     },
     {
       "name": "BlockMoveDIstance",
@@ -72,12 +102,12 @@
     {
       "name": "TurnBlockCountPlayer1",
       "type": "number",
-      "value": 5
+      "value": 0
     },
     {
       "name": "TurnBlockCountPlayer2",
       "type": "number",
-      "value": 5
+      "value": 0
     },
     {
       "name": "BaseBlocks",
@@ -101,10 +131,6 @@
         },
         {
           "type": "string",
-          "value": "BlockL"
-        },
-        {
-          "type": "string",
           "value": "BlockI"
         }
       ]
@@ -113,10 +139,6 @@
       "name": "TurnBlocks",
       "type": "array",
       "children": [
-        {
-          "type": "string",
-          "value": ""
-        },
         {
           "type": "string",
           "value": ""
@@ -162,10 +184,6 @@
         {
           "type": "string",
           "value": ""
-        },
-        {
-          "type": "string",
-          "value": ""
         }
       ]
     },
@@ -192,12 +210,13 @@
         {
           "type": "string",
           "value": ""
-        },
-        {
-          "type": "string",
-          "value": ""
         }
       ]
+    },
+    {
+      "name": "BattleState",
+      "type": "string",
+      "value": "start"
     }
   ],
   "instances": [
@@ -351,7 +370,7 @@
       "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
       "width": 16,
       "x": 80,
-      "y": -48,
+      "y": 0,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -373,7 +392,7 @@
       "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
       "width": 16,
       "x": 384,
-      "y": -48,
+      "y": 0,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -442,16 +461,16 @@
                         "y": 0
                       },
                       {
-                        "x": 16,
+                        "x": 15,
                         "y": 0
                       },
                       {
-                        "x": 16,
-                        "y": 16
+                        "x": 15,
+                        "y": 15
                       },
                       {
                         "x": 0,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -568,7 +587,7 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\sprites\\Block1x2-1.png",
                   "points": [],
                   "originPoint": {
@@ -582,7 +601,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 15,
+                        "y": 1
+                      },
+                      {
+                        "x": 15,
+                        "y": 31
+                      },
+                      {
+                        "x": 1,
+                        "y": 31
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -624,7 +662,7 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\sprites\\Block2x1-1.png",
                   "points": [],
                   "originPoint": {
@@ -638,7 +676,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -680,8 +737,8 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\Block2x2-1.png",
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\sprites\\Block2x2-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -694,7 +751,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 1,
+                        "y": 31
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -753,28 +829,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 16,
-                        "y": 32
+                        "x": 15,
+                        "y": 33
                       },
                       {
-                        "x": 16,
-                        "y": 0
+                        "x": 15,
+                        "y": 1
                       },
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 0,
-                        "y": 48
+                        "x": 1,
+                        "y": 47
                       },
                       {
-                        "x": 32,
-                        "y": 48
+                        "x": 31,
+                        "y": 47
                       },
                       {
-                        "x": 32,
-                        "y": 32
+                        "x": 31,
+                        "y": 33
                       }
                     ]
                   ]
@@ -819,7 +895,7 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\sprites\\BlockI-1.png",
                   "points": [],
                   "originPoint": {
@@ -833,7 +909,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 15,
+                        "y": 1
+                      },
+                      {
+                        "x": 15,
+                        "y": 63
+                      },
+                      {
+                        "x": 1,
+                        "y": 63
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -912,7 +1007,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -953,11 +1048,111 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "TurnBlockCountPlayer1",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "TurnBlockCountPlayer2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "index",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Build start\"",
+                        "\"info\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Repeat",
+                  "repeatExpression": "5",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "TurnBlocks[Variable(index)]",
+                        "=",
+                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks)-1)])"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "index",
+                        "+",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Link",
                   "include": {
                     "includeConfig": 0
                   },
-                  "target": "CreateBlock"
+                  "target": "CreateBlockPlayer1"
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "CreateBlockPlayer2"
                 },
                 {
                   "disabled": false,
@@ -974,61 +1169,6 @@
                         "BuildState",
                         "=",
                         "\"main\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariablePushString"
-                      },
-                      "parameters": [
-                        "TurnBlocks",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariablePushString"
-                      },
-                      "parameters": [
-                        "TurnBlocks",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariablePushString"
-                      },
-                      "parameters": [
-                        "TurnBlocks",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariablePushString"
-                      },
-                      "parameters": [
-                        "TurnBlocks",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariablePushString"
-                      },
-                      "parameters": [
-                        "TurnBlocks",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks))])"
                       ],
                       "subInstructions": []
                     }
@@ -1057,6 +1197,27 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Build main\"",
+                        "\"info\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "colorB": 228,
                   "colorG": 176,
@@ -1624,7 +1785,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1787,8 +1948,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer1",
-                                    "=",
-                                    "0"
+                                    ">",
+                                    "4"
                                   ],
                                   "subInstructions": []
                                 },
@@ -1799,8 +1960,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer2",
-                                    "=",
-                                    "0"
+                                    ">",
+                                    "4"
                                   ],
                                   "subInstructions": []
                                 }
@@ -1817,6 +1978,30 @@
                                 "Turn",
                                 "=",
                                 "\"battle\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "BuildState",
+                                "=",
+                                "\"start\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "DebuggerTools::ConsoleLog"
+                              },
+                              "parameters": [
+                                "\"mudou!!!\"",
+                                "\"warning\"",
+                                ""
                               ],
                               "subInstructions": []
                             }
@@ -1870,8 +2055,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer1",
-                                    ">",
-                                    "0"
+                                    "<",
+                                    "5"
                                   ],
                                   "subInstructions": []
                                 }
@@ -1883,75 +2068,11 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Spawn",
-                                    "Player",
-                                    "=",
-                                    "\"Player1\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Create"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Block",
-                                    "Spawn.CenterX()",
-                                    "Spawn.CenterY()",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Block",
-                                    "Player",
-                                    "=",
-                                    "\"Player1\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ResetObjectTimer"
-                                  },
-                                  "parameters": [
-                                    "Block",
-                                    "\"tetris\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "TurnBlockCountPlayer1",
-                                    "-",
-                                    "1"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
+                              "type": "BuiltinCommonInstructions::Link",
+                              "include": {
+                                "includeConfig": 0
+                              },
+                              "target": "CreateBlockPlayer1"
                             }
                           ]
                         },
@@ -1987,8 +2108,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer2",
-                                    ">",
-                                    "0"
+                                    "<",
+                                    "5"
                                   ],
                                   "subInstructions": []
                                 }
@@ -2000,75 +2121,11 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Spawn",
-                                    "Player",
-                                    "=",
-                                    "\"Player2\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Create"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Block",
-                                    "Spawn.CenterX()",
-                                    "Spawn.CenterY()",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Block",
-                                    "Player",
-                                    "=",
-                                    "\"Player2\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ResetObjectTimer"
-                                  },
-                                  "parameters": [
-                                    "Block",
-                                    "\"tetris\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "TurnBlockCountPlayer2",
-                                    "-",
-                                    "1"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
+                              "type": "BuiltinCommonInstructions::Link",
+                              "include": {
+                                "includeConfig": 0
+                              },
+                              "target": "CreateBlockPlayer2"
                             }
                           ]
                         }
@@ -2113,7 +2170,164 @@
             }
           ],
           "actions": [],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "BattleState",
+                    "=",
+                    "\"start\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Battle start\"",
+                        "\"info\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"battle\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "BattleState",
+                        "=",
+                        "\"main\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "BattleState",
+                    "=",
+                    "\"main\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Battle main\"",
+                        "\"info\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"battle\"",
+                        ">=",
+                        "5"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Turn",
+                        "=",
+                        "\"build\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "BattleState",
+                        "=",
+                        "\"start\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
