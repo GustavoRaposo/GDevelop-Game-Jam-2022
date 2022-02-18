@@ -749,6 +749,11 @@
           "name": "Fixed",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],

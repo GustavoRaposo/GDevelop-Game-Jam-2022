@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0550000000000006,
+    "zoomFactor": 1.3799999999999994,
     "windowMask": false
   },
   "objectsGroups": [
@@ -223,6 +223,16 @@
       "name": "BattleState",
       "type": "string",
       "value": "start"
+    },
+    {
+      "name": "MaxBlockNumberPerTurn",
+      "type": "string",
+      "value": "6"
+    },
+    {
+      "name": "MaxBlockNumber",
+      "type": "number",
+      "value": 20
     }
   ],
   "instances": [
@@ -251,7 +261,7 @@
       "name": "Core",
       "persistentUuid": "365b4a9d-4eac-42c7-a856-cef9a9f7272e",
       "width": 0,
-      "x": 80,
+      "x": 48,
       "y": 256,
       "zOrder": 6,
       "numberProperties": [],
@@ -273,7 +283,7 @@
       "name": "Core",
       "persistentUuid": "57a3b1dd-f8bd-4d58-95da-f5a2a4c9d61c",
       "width": 0,
-      "x": 368,
+      "x": 400,
       "y": 256,
       "zOrder": 6,
       "numberProperties": [],
@@ -375,8 +385,8 @@
       "name": "Spawn",
       "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
       "width": 16,
-      "x": 80,
-      "y": 0,
+      "x": 96,
+      "y": -16,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -397,8 +407,8 @@
       "name": "Spawn",
       "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
       "width": 16,
-      "x": 384,
-      "y": 0,
+      "x": 368,
+      "y": -16,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -503,7 +513,13 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 3
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -1033,7 +1049,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1145,11 +1161,23 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Link",
-                  "include": {
-                    "includeConfig": 0
-                  },
-                  "target": "CreateCannonPlayer1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "cannonIndex",
+                        "=",
+                        "RandomInRange(1, VariableChildCount(TurnBlocks)-1)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
                   "disabled": false,
@@ -1158,25 +1186,32 @@
                   "include": {
                     "includeConfig": 0
                   },
-                  "target": "CreateCannonPlayer2"
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Link",
-                  "include": {
-                    "includeConfig": 0
-                  },
                   "target": "CreateBlockPlayer1"
                 },
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Link",
                   "include": {
                     "includeConfig": 0
                   },
                   "target": "CreateBlockPlayer2"
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
                 },
                 {
                   "disabled": false,
@@ -1877,7 +1912,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1972,8 +2007,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer1",
-                                    ">",
-                                    "4"
+                                    "=",
+                                    "Variable(MaxBlockNumberPerTurn)-1"
                                   ],
                                   "subInstructions": []
                                 },
@@ -1984,8 +2019,8 @@
                                   },
                                   "parameters": [
                                     "TurnBlockCountPlayer2",
-                                    ">",
-                                    "4"
+                                    "=",
+                                    "Variable(MaxBlockNumberPerTurn)-1"
                                   ],
                                   "subInstructions": []
                                 }
@@ -2014,18 +2049,6 @@
                                 "BuildState",
                                 "=",
                                 "\"start\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "DebuggerTools::ConsoleLog"
-                              },
-                              "parameters": [
-                                "\"mudou!!!\"",
-                                "\"warning\"",
-                                ""
                               ],
                               "subInstructions": []
                             }
@@ -2080,7 +2103,7 @@
                                   "parameters": [
                                     "TurnBlockCountPlayer1",
                                     "<",
-                                    "5"
+                                    "Variable(MaxBlockNumberPerTurn)"
                                   ],
                                   "subInstructions": []
                                 }
@@ -2092,11 +2115,85 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Link",
-                              "include": {
-                                "includeConfig": 0
-                              },
-                              "target": "CreateBlockPlayer1"
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "cannonIndex",
+                                    "=",
+                                    "Variable(TurnBlockCountPlayer1)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Link",
+                                  "include": {
+                                    "includeConfig": 0
+                                  },
+                                  "target": "CreateCannonPlayer1"
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "cannonIndex",
+                                    "!=",
+                                    "Variable(TurnBlockCountPlayer1)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Link",
+                                  "include": {
+                                    "includeConfig": 0
+                                  },
+                                  "target": "CreateBlockPlayer1"
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "TurnBlockCountPlayer1",
+                                    "+",
+                                    "1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             }
                           ]
                         },
@@ -2133,7 +2230,7 @@
                                   "parameters": [
                                     "TurnBlockCountPlayer2",
                                     "<",
-                                    "5"
+                                    "Variable(MaxBlockNumberPerTurn)"
                                   ],
                                   "subInstructions": []
                                 }
@@ -2145,11 +2242,85 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Link",
-                              "include": {
-                                "includeConfig": 0
-                              },
-                              "target": "CreateBlockPlayer2"
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "cannonIndex",
+                                    "=",
+                                    "Variable(TurnBlockCountPlayer2)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Link",
+                                  "include": {
+                                    "includeConfig": 0
+                                  },
+                                  "target": "CreateCannonPlayer2"
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "cannonIndex",
+                                    "!=",
+                                    "Variable(TurnBlockCountPlayer2)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Link",
+                                  "include": {
+                                    "includeConfig": 0
+                                  },
+                                  "target": "CreateBlockPlayer2"
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "TurnBlockCountPlayer2",
+                                    "+",
+                                    "1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             }
                           ]
                         }
@@ -2350,7 +2521,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -2662,8 +2833,8 @@
                               "parameters": [
                                 "",
                                 "Bullet",
-                                "CannonAim.CenterX()",
-                                "CannonAim.CenterY()",
+                                "CannonAim.BoundingBoxRight()+8",
+                                "CannonAim.CenterY()-8",
                                 ""
                               ],
                               "subInstructions": []
@@ -2995,8 +3166,8 @@
                               "parameters": [
                                 "",
                                 "Bullet",
-                                "CannonAim.CenterX()",
-                                "CannonAim.CenterY()",
+                                "CannonAim.BoundingBoxLeft()-8",
+                                "CannonAim.CenterY()-8",
                                 ""
                               ],
                               "subInstructions": []
@@ -3023,6 +3194,231 @@
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Collisions",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            "Bullet",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            "Blocks",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Blocks",
+                            "Health",
+                            "-",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            "Core",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Core",
+                            "Health",
+                            "-",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Health",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Core",
+                        "Health",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Core",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Game Over\"",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
                   "disabled": false,
