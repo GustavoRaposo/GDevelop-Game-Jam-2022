@@ -831,7 +831,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-1-0.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 24,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,

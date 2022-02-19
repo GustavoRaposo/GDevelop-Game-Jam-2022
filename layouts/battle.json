@@ -2827,8 +2827,8 @@
                           "parameters": [
                             "",
                             "Bullet",
-                            "CannonAim.BoundingBoxRight()+8",
-                            "CannonAim.CenterY()-8",
+                            "CannonAim.PointX(\"Shoot\")",
+                            "CannonAim.PointY(\"Shoot\") - 4",
                             ""
                           ],
                           "subInstructions": []
@@ -2912,8 +2912,8 @@
                           "parameters": [
                             "",
                             "Bullet",
-                            "CannonAim.BoundingBoxLeft()-8",
-                            "CannonAim.CenterY()-8",
+                            "CannonAim.PointX(\"Shoot\") - 8",
+                            "CannonAim.PointY(\"Shoot\") - 4",
                             ""
                           ],
                           "subInstructions": []
