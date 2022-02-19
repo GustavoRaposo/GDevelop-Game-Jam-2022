@@ -564,46 +564,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/Background2-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Background2-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/BlockCannon-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\BlockCannon-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/CannonAim-1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\sprites\\CannonAim-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Block1x2-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block1x2-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Block2x1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block2x1-1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -636,15 +600,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/Block2x2-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block2x2-1-0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/CannonAim-1-0.png",
         "kind": "image",
         "metadata": "",
@@ -658,15 +613,6 @@
         "kind": "image",
         "metadata": "",
         "name": "Block-1-0-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Block-1-0-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block-1-0-1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -780,28 +726,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/Block-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block-1-0.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/Block-1-0-1-0.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\sprites\\Block-1-0-1-0.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Block-2-0-1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Block-2-0-1-1.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1047,15 +975,6 @@
         "name": "assets\\sprites\\CannonAim-10.png",
         "smoothed": false,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/BlockCannon-1-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\BlockCannon-1-2.png",
-        "smoothed": false,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1380,6 +1299,195 @@
         "name": "assets\\sprites\\CorePlayer2-10.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockI-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockI-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Block1x2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Block1x2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x1-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x1-1-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1-0-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1-0-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block1x2-1-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block1x2-1-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block-1-0-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block-1-0-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block-2-0-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block-2-0-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Background2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Background2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockCannon-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockCannon-1-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockCannon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockCannon-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockCannon_Selected-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockCannon_Selected-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1678,7 +1786,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BlockCannon-1-2.png",
+                  "image": "assets\\sprites\\BlockCannon-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1703,11 +1811,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BlockCannonSelected-1.png",
+                  "image": "assets\\sprites\\BlockCannon_Selected-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

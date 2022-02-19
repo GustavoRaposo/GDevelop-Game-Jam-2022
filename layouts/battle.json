@@ -1,16 +1,16 @@
 {
-  "b": 80,
+  "b": 88,
   "disableInputWhenNotFocused": true,
   "mangledName": "Battle",
   "name": "Battle",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 76,
+  "r": 88,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 79,
+  "v": 88,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -541,7 +541,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\Block-1-0-1-0.png",
+                  "image": "assets\\sprites\\Block-1-0-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1076,6 +1076,64 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Block1x2-1-0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block1x2-1-0-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Block1x2-1-1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block1x2-1-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1114,7 +1172,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\sprites\\Block2x1-1.png",
+                  "image": "assets\\sprites\\Block2x1-1-2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1147,6 +1205,64 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Block2x1-1-0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x1-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Block2x1-1-1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x1-1-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -1189,7 +1305,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\sprites\\Block2x2-1-0.png",
+                  "image": "assets\\sprites\\Block2x2-1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1347,7 +1463,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\sprites\\BlockI-1.png",
+                  "image": "assets\\sprites\\BlockI-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
