@@ -1769,170 +1769,230 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-1-0.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-7.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-8.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-9.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 }
@@ -1951,170 +2011,230 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-7.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-8.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-9.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAimPlayer2-10.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 36,
+                      "y": 8
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "customCollisionMask": []
                 }
