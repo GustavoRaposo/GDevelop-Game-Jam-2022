@@ -1803,6 +1803,15 @@
         "name": "assets\\sprites\\CannomAimPlayer2-10-0.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Button-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Button-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2676,6 +2685,11 @@
       "name": "CannonId",
       "type": "number",
       "value": 1
+    },
+    {
+      "name": "TurnTransitionInterval",
+      "type": "number",
+      "value": 3
     }
   ],
   "layouts": [

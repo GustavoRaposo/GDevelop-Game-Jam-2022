@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2550000000000052,
+    "zoomFactor": 1.2050000000000056,
     "windowMask": false
   },
   "objectsGroups": [
@@ -80,6 +80,45 @@
         },
         {
           "name": "BlockCannon"
+        }
+      ]
+    },
+    {
+      "name": "UI_BuildTurn",
+      "objects": [
+        {
+          "name": "TextBuildTurnDescription"
+        },
+        {
+          "name": "TextBuildTurn"
+        }
+      ]
+    },
+    {
+      "name": "UI_BattleTurn",
+      "objects": [
+        {
+          "name": "TextBattleTurn"
+        },
+        {
+          "name": "TextBattleTurnDescription"
+        }
+      ]
+    },
+    {
+      "name": "UI_GameOver",
+      "objects": [
+        {
+          "name": "TextGameOver"
+        },
+        {
+          "name": "TextGameOverWinner"
+        },
+        {
+          "name": "ButtonPlay"
+        },
+        {
+          "name": "TextPlayerAgain"
         }
       ]
     }
@@ -253,6 +292,11 @@
       "name": "SelectedCannonPlayer2",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Winner",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -310,7 +354,7 @@
       "stringProperties": [],
       "initialVariables": [
         {
-          "name": "Variable",
+          "name": "Player",
           "type": "string",
           "value": "Player2"
         }
@@ -405,7 +449,7 @@
       "name": "Spawn",
       "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
       "width": 16,
-      "x": 112,
+      "x": 96,
       "y": -16,
       "zOrder": 11,
       "numberProperties": [],
@@ -452,6 +496,134 @@
       "x": 16,
       "y": 0,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 351.82208251953125,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBuildTurn",
+      "persistentUuid": "d417f4a7-39f7-4bc7-99fd-273852feb82e",
+      "width": 0,
+      "x": 83.5853500366211,
+      "y": 64.89606475830078,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBuildTurnDescription",
+      "persistentUuid": "fadec8ce-fbb8-41bf-8b1d-00db62db7fa4",
+      "width": 0,
+      "x": 96,
+      "y": 174,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBattleTurnDescription",
+      "persistentUuid": "9cf36d7e-6608-4148-a478-3162c71ca589",
+      "width": 0,
+      "x": 112,
+      "y": 174,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 6.518784999847412,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBattleTurn",
+      "persistentUuid": "923de9fb-71f2-4905-836a-af816432647c",
+      "width": 0,
+      "x": 83.06410217285156,
+      "y": 66.72335052490234,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "",
+      "locked": false,
+      "name": "ButtonPlay",
+      "persistentUuid": "1f48efbd-b34e-431d-bdca-df256535f0fe",
+      "width": 96,
+      "x": 192,
+      "y": 208,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextGameOver",
+      "persistentUuid": "c903d57f-5de2-437e-ae89-5b9770930b9d",
+      "width": 0,
+      "x": 74,
+      "y": 16,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextGameOverWinner",
+      "persistentUuid": "4b69fc3d-5f03-4efc-9008-2c5e5bd28f95",
+      "width": 0,
+      "x": 177,
+      "y": 142,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextPlayerAgain",
+      "persistentUuid": "960bdc60-f589-45a5-83ff-c850ae2efb7a",
+      "width": 0,
+      "x": 200,
+      "y": 222,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -612,6 +784,11 @@
           "name": "Health",
           "type": "number",
           "value": 3
+        },
+        {
+          "name": "Player",
+          "type": "string",
+          "value": "Player"
         }
       ],
       "effects": [],
@@ -1626,7 +1803,7 @@
       "italic": false,
       "name": "Debug",
       "smoothed": true,
-      "tags": "",
+      "tags": "debug",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -1639,6 +1816,162 @@
         "b": 0,
         "g": 212,
         "r": 255
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextBattleTurnDescription",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Fight! Destroy the oponent's core!",
+      "font": "",
+      "characterSize": 16,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextGameOverWinner",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "<Player> Won!",
+      "font": "",
+      "characterSize": 16,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextBuildTurnDescription",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Build your defenses to protect the core!",
+      "font": "",
+      "characterSize": 16,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextBattleTurn",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Battle Turn",
+      "font": "",
+      "characterSize": 64,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextGameOver",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Game Over",
+      "font": "",
+      "characterSize": 64,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "TextBuildTurn",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Build Turn",
+      "font": "",
+      "characterSize": 64,
+      "color": {
+        "b": 228,
+        "g": 228,
+        "r": 228
+      }
+    },
+    {
+      "bottomMargin": 2,
+      "height": 16,
+      "leftMargin": 2,
+      "name": "ButtonPlay",
+      "rightMargin": 2,
+      "tags": "",
+      "texture": "assets\\sprites\\Button-1.png",
+      "tiled": true,
+      "topMargin": 2,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "TextPlayerAgain",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Play Again",
+      "font": "",
+      "characterSize": 16,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     }
   ],
@@ -1693,6 +2026,36 @@
           },
           "parameters": [
             "Floor"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "UI_BuildTurn"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "UI_BattleTurn"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "UI_GameOver"
           ],
           "subInstructions": []
         }
@@ -1752,166 +2115,250 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarScene"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [
-                        "TurnBlockCountPlayer1",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "TurnBlockCountPlayer2",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "index",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "\"Build start\"",
-                        "\"info\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "turnBlocksFixedCount",
-                        "=",
-                        "0"
-                      ],
+                      "parameters": [],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Repeat",
-                  "repeatExpression": "5",
-                  "conditions": [],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarSceneTxt"
-                      },
-                      "parameters": [
-                        "TurnBlocks[Variable(index)]",
-                        "=",
-                        "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks)-1)])"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DebuggerTools::ConsoleLog"
+                          },
+                          "parameters": [
+                            "\"Build start\"",
+                            "\"info\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "TurnBlockCountPlayer1",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "TurnBlockCountPlayer2",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "index",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "turnBlocksFixedCount",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"turnTransition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "UI_BuildTurn",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
                     },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "index",
-                        "+",
-                        "1"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Repeat",
+                      "repeatExpression": "5",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "TurnBlocks[Variable(index)]",
+                            "=",
+                            "VariableString(BaseBlocks[Random(VariableChildCount(BaseBlocks)-1)])"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "index",
+                            "+",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "cannonIndex",
+                            "=",
+                            "RandomInRange(1, VariableChildCount(TurnBlocks)-1)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarScene"
+                        "value": "CompareTimer"
                       },
                       "parameters": [
-                        "cannonIndex",
-                        "=",
-                        "RandomInRange(1, VariableChildCount(TurnBlocks)-1)"
+                        "",
+                        "\"turnTransition\"",
+                        ">=",
+                        "GlobalVariable(TurnTransitionInterval)"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Link",
-                  "include": {
-                    "includeConfig": 0
-                  },
-                  "target": "CreateBlockPlayer1"
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Link",
-                  "include": {
-                    "includeConfig": 0
-                  },
-                  "target": "CreateBlockPlayer2"
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarSceneTxt"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Link",
+                      "include": {
+                        "includeConfig": 0
                       },
-                      "parameters": [
-                        "BuildState",
-                        "=",
-                        "\"main\""
+                      "target": "CreateBlockPlayer1"
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Link",
+                      "include": {
+                        "includeConfig": 0
+                      },
+                      "target": "CreateBlockPlayer2"
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "UI_BuildTurn"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RemoveTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"turnTransition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "BuildState",
+                            "=",
+                            "\"main\""
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -1962,7 +2409,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -2591,7 +3038,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3226,7 +3673,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3253,7 +3700,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3275,7 +3722,16 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -3303,23 +3759,22 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarSceneTxt"
+                        "value": "ResetObjectTimer"
                       },
                       "parameters": [
-                        "BattleState",
-                        "=",
-                        "\"main\""
+                        "CannonAim",
+                        "\"shoot\""
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetObjectTimer"
+                        "value": "ResetTimer"
                       },
                       "parameters": [
-                        "CannonAim",
-                        "\"shoot\""
+                        "",
+                        "\"turnTransition\""
                       ],
                       "subInstructions": []
                     },
@@ -3346,9 +3801,85 @@
                         "0"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "UI_BattleTurn",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"turnTransition\"",
+                        ">=",
+                        "GlobalVariable(TurnTransitionInterval)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "UI_BattleTurn"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RemoveTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"turnTransition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "BattleState",
+                            "=",
+                            "\"main\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             },
@@ -3375,6 +3906,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Cannon Shoot",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "CannonAim",
                   "conditions": [],
@@ -4315,7 +4861,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4562,9 +5108,103 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"battle\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Turn",
+                        "=",
+                        "\"gameOver\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Core",
+                            "Player",
+                            "=",
+                            "\"Player1\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "Winner",
+                            "=",
+                            "\"Player 2\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Core",
+                            "Player",
+                            "=",
+                            "\"Player2\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "Winner",
+                            "=",
+                            "\"Player 1\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -4616,6 +5256,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Selected Animations",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
@@ -4635,7 +5290,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "CannonsPlayer1",
                   "valueIteratorVariableName": "cannonId",
@@ -4759,12 +5414,135 @@
       "parameters": []
     },
     {
+      "colorB": 35,
+      "colorG": 166,
+      "colorR": 245,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": false,
+      "name": "Game Over Turn",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "Turn",
+                "=",
+                "\"gameOver\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "UI_GameOver",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TextGameOverWinner",
+                    "=",
+                    "VariableString(Winner) + \" Won!\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ButtonPlay",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Battle\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
       "colorB": 155,
       "colorG": 155,
       "colorR": 155,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Cheats & Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
