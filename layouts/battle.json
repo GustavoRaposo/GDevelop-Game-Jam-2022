@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.3799999999999994,
+    "zoomFactor": 1.4049999999999994,
     "windowMask": false
   },
   "objectsGroups": [
@@ -88,7 +88,7 @@
     {
       "name": "BlockSpeed",
       "type": "number",
-      "value": 0.1
+      "value": 0.2
     },
     {
       "name": "BlockMoveDIstance",
@@ -233,6 +233,26 @@
       "name": "MaxBlockNumber",
       "type": "number",
       "value": 20
+    },
+    {
+      "name": "CannonsPlayer1",
+      "type": "array",
+      "children": []
+    },
+    {
+      "name": "CannonsPlayer2",
+      "type": "array",
+      "children": []
+    },
+    {
+      "name": "SelectedCannonPlayer1",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SelectedCannonPlayer2",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -419,6 +439,22 @@
           "value": "Player2"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Debug",
+      "persistentUuid": "a9060b23-5205-4f1e-9132-a9d8de2b66d8",
+      "width": 0,
+      "x": 192,
+      "y": 32,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -957,6 +993,26 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Debug",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -2663,6 +2719,30 @@
                         "\"shoot\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "SelectedCannonPlayer1",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "SelectedCannonPlayer2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -2942,12 +3022,13 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
+                                    "value": "VarObjet"
                                   },
                                   "parameters": [
                                     "CannonAim",
-                                    "Selected",
-                                    "True"
+                                    "ID",
+                                    "=",
+                                    "Variable(CannonsPlayer1[Variable(SelectedCannonPlayer1)])"
                                   ],
                                   "subInstructions": []
                                 }
@@ -3054,12 +3135,13 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
+                                    "value": "VarObjet"
                                   },
                                   "parameters": [
                                     "CannonAim",
-                                    "Selected",
-                                    "True"
+                                    "ID",
+                                    "=",
+                                    "Variable(CannonsPlayer1[Variable(SelectedCannonPlayer1)])"
                                   ],
                                   "subInstructions": []
                                 }
@@ -3131,7 +3213,7 @@
                           },
                           "parameters": [
                             "",
-                            "e"
+                            "d"
                           ],
                           "subInstructions": []
                         }
@@ -3141,70 +3223,78 @@
                         {
                           "disabled": false,
                           "folded": false,
+                          "type": "BuiltinCommonInstructions::JsCode",
+                          "inlineCode": "if (runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").getAsNumber() < runtimeScene.getVariables().get(\"CannonsPlayer1\").getChildrenCount()-1) {\n    runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").add(1);\n} else if (\n    (runtimeScene.getVariables().get(\"CannonsPlayer1\").getChildrenCount() <= 1) ||\n    (runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").getAsNumber() == runtimeScene.getVariables().get(\"CannonsPlayer1\").getChildrenCount()-1)) {\n    runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").setNumber(0);\n}",
+                          "parameterObjects": "",
+                          "useStrict": true,
+                          "eventsSheetExpanded": false
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "CannonAim",
-                                    "Player",
-                                    "=",
-                                    "\"Player1\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "CannonAim",
-                                    "Selected",
-                                    "True"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
+                          "conditions": [],
                           "actions": [
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Create"
+                                "value": "DebuggerTools::ConsoleLog"
                               },
                               "parameters": [
+                                "\"Child Count: \" + ToString(VariableChildCount(CannonsPlayer1)) + \" - Selected: \" + ToString(Variable(SelectedCannonPlayer1))",
                                 "",
-                                "Bullet",
-                                "CannonAim.BoundingBoxRight()+8",
-                                "CannonAim.CenterY()-8",
                                 ""
                               ],
                               "subInstructions": []
-                            },
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "a"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::JsCode",
+                          "inlineCode": "if (runtimeScene.getVariables().get(\"CannonsPlayer1\").getChildrenCount() <= 1) {\n    runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").setNumber(0);\n\n} else if (runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").getAsNumber() > 0) {\n    runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").sub(1);\n    \n} else if (runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").getAsNumber() == 0) {\n    runtimeScene.getVariables().get(\"SelectedCannonPlayer1\").setNumber(runtimeScene.getVariables().get(\"CannonsPlayer1\").getChildrenCount()-1);\n}",
+                          "parameterObjects": "",
+                          "useStrict": true,
+                          "eventsSheetExpanded": false
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Physics2::ApplyPolarForce"
+                                "value": "DebuggerTools::ConsoleLog"
                               },
                               "parameters": [
-                                "Bullet",
-                                "Physics2",
-                                "CannonAim.Angle()",
-                                "2",
-                                "1",
-                                "1"
+                                "\"Child Count: \" + ToString(VariableChildCount(CannonsPlayer1)) + \" - Selected: \" + ToString(Variable(SelectedCannonPlayer1))",
+                                "",
+                                ""
                               ],
                               "subInstructions": []
                             }
@@ -3451,100 +3541,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "Return"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "CannonAim",
-                                    "Player",
-                                    "=",
-                                    "\"Player2\""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "CannonAim",
-                                    "Selected",
-                                    "True"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Bullet",
-                                "CannonAim.BoundingBoxLeft()-8",
-                                "CannonAim.CenterY()-8",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Physics2::ApplyPolarForce"
-                              },
-                              "parameters": [
-                                "Bullet",
-                                "Physics2",
-                                "CannonAim.Angle()-180",
-                                "2",
-                                "1",
-                                "1"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
                     }
                   ],
                   "parameters": []
@@ -3696,7 +3692,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3757,20 +3753,113 @@
                               "subInstructions": []
                             }
                           ],
-                          "actions": [
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "inverted": false,
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "CannonAim",
-                                ""
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                              "iterableVariableName": "CannonsPlayer1",
+                              "valueIteratorVariableName": "cannonId",
+                              "keyIteratorVariableName": "index",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "cannonId",
+                                    "=",
+                                    "CannonAim.Variable(ID)"
+                                  ],
+                                  "subInstructions": []
+                                }
                               ],
-                              "subInstructions": []
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "TextObject::String"
+                                  },
+                                  "parameters": [
+                                    "Debug",
+                                    "=",
+                                    "\"\""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "TextObject::String"
+                                  },
+                                  "parameters": [
+                                    "Debug",
+                                    "+",
+                                    "\"(\" + VariableString(index) + \"): \" + VariableString(cannonId) + \",\""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "DebuggerTools::ConsoleLog"
+                                  },
+                                  "parameters": [
+                                    "\"Cannon Destroyed (\" + VariableString(index) + \"): \" + VariableString(cannonId) + \",\"",
+                                    "\"info\"",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SceneVariableRemoveAt"
+                                  },
+                                  "parameters": [
+                                    "CannonsPlayer1",
+                                    "index"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "SelectedCannonPlayer1",
+                                    "=",
+                                    "0"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "CannonAim",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             }
-                          ],
-                          "events": []
+                          ]
                         }
                       ]
                     },
@@ -3856,7 +3945,7 @@
                         "",
                         "\"battle\"",
                         ">=",
-                        "30"
+                        "20"
                       ],
                       "subInstructions": []
                     }

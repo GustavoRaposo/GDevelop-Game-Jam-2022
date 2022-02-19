@@ -144,6 +144,53 @@
                 "\"tetris\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariablePushNumber"
+              },
+              "parameters": [
+                "CannonsPlayer1",
+                "CannonAim.Variable(ID)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "=",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "CannonsPlayer1",
+          "valueIteratorVariableName": "cannonId",
+          "keyIteratorVariableName": "index",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "+",
+                "\"(\" + VariableString(index) + \"): \" + VariableString(cannonId) + \",\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
