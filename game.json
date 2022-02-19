@@ -591,15 +591,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/Bullet-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Bullet-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/Block1x2-1.png",
         "kind": "image",
         "metadata": "",
@@ -1065,6 +1056,51 @@
         "name": "assets\\sprites\\BlockCannon-1-2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Bullet-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Bullet-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollision-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollision-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollision-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollision-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollision-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollision-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollision-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollision-4.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1114,6 +1150,86 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\Bullet-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BulletOnCollision",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollision-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollision-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollision-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollision-4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
