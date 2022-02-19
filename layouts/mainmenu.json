@@ -14,14 +14,14 @@
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 64,
-    "gridHeight": 64,
+    "gridWidth": 32,
+    "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.3600000000000003,
+    "zoomFactor": 0.94,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,11 +33,11 @@
       "height": 64,
       "layer": "",
       "locked": false,
-      "name": "Button",
-      "persistentUuid": "b09f045d-1916-4877-b9e7-385743165533",
+      "name": "PlayButton",
+      "persistentUuid": "5c3f4af5-f0dc-467a-a67c-1c4e07852fa8",
       "width": 64,
-      "x": 128,
-      "y": 128,
+      "x": 384,
+      "y": 352,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -46,20 +46,44 @@
   ],
   "objects": [
     {
-      "bottomMargin": 8,
-      "height": 64,
-      "leftMargin": 8,
-      "name": "Button",
-      "rightMargin": 8,
+      "name": "PlayButton",
       "tags": "",
-      "texture": "assets\\sprites\\PlayButton-1.png",
-      "tiled": true,
-      "topMargin": 8,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 64,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.02500000037252903,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Play button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -76,6 +100,19 @@
           "parameters": [
             "",
             "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "PlayButton",
+            "=",
+            "",
+            ""
           ],
           "subInstructions": []
         }

@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0650000000000055,
+    "zoomFactor": 1.030000000000006,
     "windowMask": false
   },
   "objectsGroups": [
@@ -403,7 +403,7 @@
       "width": 160,
       "x": 16,
       "y": -32,
-      "zOrder": 8,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -435,7 +435,7 @@
       "width": 160,
       "x": 304,
       "y": -32,
-      "zOrder": 8,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -488,14 +488,14 @@
       "angle": 0,
       "customSize": true,
       "height": 320,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "Debug",
       "persistentUuid": "a9060b23-5205-4f1e-9132-a9d8de2b66d8",
       "width": 448,
       "x": 16,
       "y": 0,
-      "zOrder": 12,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -504,14 +504,14 @@
       "angle": 351.82208251953125,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextBuildTurn",
       "persistentUuid": "d417f4a7-39f7-4bc7-99fd-273852feb82e",
       "width": 0,
       "x": 83.5853500366211,
       "y": 64.89606475830078,
-      "zOrder": 13,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -520,14 +520,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextBuildTurnDescription",
       "persistentUuid": "fadec8ce-fbb8-41bf-8b1d-00db62db7fa4",
       "width": 0,
       "x": 96,
       "y": 174,
-      "zOrder": 14,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -536,14 +536,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextBattleTurnDescription",
       "persistentUuid": "9cf36d7e-6608-4148-a478-3162c71ca589",
       "width": 0,
       "x": 112,
       "y": 174,
-      "zOrder": 15,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -552,14 +552,14 @@
       "angle": 6.518784999847412,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextBattleTurn",
       "persistentUuid": "923de9fb-71f2-4905-836a-af816432647c",
       "width": 0,
       "x": 83.06410217285156,
       "y": 66.72335052490234,
-      "zOrder": 16,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -568,14 +568,14 @@
       "angle": 0,
       "customSize": true,
       "height": 48,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "ButtonPlay",
       "persistentUuid": "1f48efbd-b34e-431d-bdca-df256535f0fe",
       "width": 96,
       "x": 192,
       "y": 208,
-      "zOrder": 17,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -584,14 +584,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextGameOver",
       "persistentUuid": "c903d57f-5de2-437e-ae89-5b9770930b9d",
       "width": 0,
       "x": 74,
       "y": 16,
-      "zOrder": 18,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -600,14 +600,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextGameOverWinner",
       "persistentUuid": "4b69fc3d-5f03-4efc-9008-2c5e5bd28f95",
       "width": 0,
       "x": 177,
       "y": 142,
-      "zOrder": 19,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -616,14 +616,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "TextPlayerAgain",
       "persistentUuid": "960bdc60-f589-45a5-83ff-c850ae2efb7a",
       "width": 0,
       "x": 200,
       "y": 222,
-      "zOrder": 20,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2139,7 +2139,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2159,7 +2159,7 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2323,7 +2323,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2453,14 +2453,14 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2594,7 +2594,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2728,7 +2728,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2862,7 +2862,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3014,7 +3014,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3082,7 +3082,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4811,7 +4811,7 @@
                             "BulletParticle",
                             "Bullet.CenterX()",
                             "Bullet.CenterY()",
-                            ""
+                            "\"Particles\""
                           ],
                           "subInstructions": []
                         }
@@ -4860,7 +4860,7 @@
                             "BulletParticle",
                             "Bullet.CenterX()",
                             "Bullet.CenterY()",
-                            ""
+                            "\"Particles\""
                           ],
                           "subInstructions": []
                         },
@@ -4922,7 +4922,7 @@
                             "BulletParticle",
                             "Bullet.CenterX()",
                             "Bullet.CenterY()",
-                            ""
+                            "\"Particles\""
                           ],
                           "subInstructions": []
                         },
@@ -5505,14 +5505,14 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game Over Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5876,6 +5876,28 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 7940624,
+      "ambientLightColorG": 6031344,
+      "ambientLightColorR": 8624136,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Particles",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 7940624,
+      "ambientLightColorG": 6031344,
+      "ambientLightColorR": 8624136,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "UI",
+      "visibility": true,
+      "cameras": [],
       "effects": []
     }
   ],
