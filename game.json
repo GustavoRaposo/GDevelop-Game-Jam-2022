@@ -1812,6 +1812,15 @@
         "name": "assets\\sprites\\Button-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayButton-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayButton-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
