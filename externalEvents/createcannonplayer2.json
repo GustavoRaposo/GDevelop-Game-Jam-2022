@@ -166,6 +166,17 @@
                 "yes"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariablePushNumber"
+              },
+              "parameters": [
+                "CannonsPlayer2",
+                "CannonAim.Variable(ID)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
