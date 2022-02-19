@@ -771,96 +771,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-5.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-7.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-8.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-9.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/Core-0-10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\Core-0-10.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/CannonAim-1-3.png",
         "kind": "image",
         "metadata": "",
@@ -1212,109 +1122,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-5.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-6.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-7.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-8.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-9.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/CorePlayer2-10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\CorePlayer2-10.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/Block2x2-1-0.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\sprites\\Block2x2-1-0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/BlockI-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\BlockI-1-0.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1486,6 +1297,510 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\sprites\\BlockCannon_Selected-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockI-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockI-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Block2x2-1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Block2x2-1-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockI-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockI-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockI-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockI-1-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/Core-0-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\Core-0-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer1-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer1-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-2-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-3-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-4-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-5-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-5-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-6-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-6-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-7-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-7-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-8-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-8-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-9-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-9-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannomAimPlayer2-10-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannomAimPlayer2-10-0.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -1872,11 +2187,12 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"CannomAimPlayer1\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":16,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAQCAYAAABnaabpAAAC5UlEQVR4Xu2boXIbMRCGpRcIj0EfwMBYKBN2Rp3CwqJMYMsCF5Y1sBMUGJgJclmm6LCBH6DA5fcCyUiWMjrFOq9lrzZzXhPvzZzvt/7b/bw6yVrJSxwQB8SBE3VAn+i4ZdjigDggDqgsANfr9Uvsz2QyqQrLxWLR05/P56JfMWHFf8m/ON3GWn/voBLAt1wue+U2m83cMTUI08JLa576Roh+v/DF/74Dkn+0jUjt+usB0MIvBV9aABaEWAgCvLguDkDrXBxff9fgw7nYJGTX/+7Hf6s1ZGLS8X/z+vdaQyYm1f/i9R+1hkxMqn/p9Z+1hkw8an1u/7nzD1F/WQCuVqse+6bT6dtx6AaxM7K7u3N1dfXfnZ7GFo7hOjEAh/SxuuG8tm2UMX/cYRpX0V80ysy9fhLDbYXxPzTKfPX6SQz3FfR/N8pce/0khscK+j8bZW68fhLD8wnoc/vPnX8D9fcGn7j7S+ETQBJDcB8IbQOQ1ei6H647tNcagh+FfoBhFX0EAEnHj0hAUn1EAZLqIwA4an1u/7nzrxSAFlD2dXb2y73XBiClPgaA3T8//k8Hjr8QgN3S688O1C9MwO6v1784UL+wALsnr//5QP1CALLrc/vPnX8V6m+wA6QEEKYDpNQXACrVPjQqTIG3dUACQGYACwA3DRhhAyJT4BpT8MIOMH3MUNyBF3aAR9Mv7ACPpl/YAY5Gn9t/7vzDTIHtzR56DhgXX+4Z4bbngvZz9hlgmEbbri6OqyxCyCKILILIIshmEZBjEQoBwF3rAKU//m7MJQDMLXK0basAALUpmX0bCvc2HMQyfOzz0bcBcW9D4N6GIdtgNtvQuLYhcecfov7egQwAnGnGmB4DLficmUj47bNKvA8EsHsARb/MgV0QFv/HtRE4zZJTu//ZTi6AMBhEDb5dN4K68ES/74D8FU7+ChdnxFjrDzWVLesl5FPigDggDnxsBwSAH/v+yLcTB8QBQgdeAdzwyfD9E7iPAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAQCAYAAABnaabpAAABjklEQVR4Xu2bbRaCIBBFdRuultW6DTukJqDAg8I6cftVNjJynXnD+DEOfCAAAQh0SmDsdN5MGwIQgMAQFcB5nheXzzRNt4ol/uFP/B0EyL82+nMStV14QuCx7Z8uIvhfhQ/+fsATf9dxQf69R8ATQBtkuUqj2NQekjK2YoP/OgIKW8WmzvswKGMrNvivI6CwVWzqvH/n/BcLoJ1c2J7mJmxF1a3gqVVeToDxD3/iz788Qv6lCaT05yWALZX96vCMMYsxBv8bHPjnu49copf8T/yRf1Z/ECAE6EkAAUaAle6rpMikbH+lACGACCACSAHotgAigAggAogAIoAlbZBdvpYshW2vve8TfnfHUdsw/MOf+NMJkH9x/Sm+Cxz27vppyFsqAoh//+J1nqpuAf/8dUDi77/i7/QgtLtSc1Mntl1PL80S/+vqzr1Dvv2+3K5R1a3gD/+e4i/6elvYZoYJqadUnSX+/TYX/scjU3URVbYX8ddH/N36fm9ZCGINAQhAoC0BBLAtX0aHAAR+mMAD+p0QTfqya3EAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"paths\":[\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-1.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-2.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-3.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-4.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-5.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-6.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-7.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-8.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-9.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer1-10.png\"],\"name\":\"CannomAimPlayer1\",\"singleFrame\":false}}",
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-1.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-1.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -1899,7 +2215,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-1-0.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-2.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -1922,7 +2238,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-2.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-3.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -1945,7 +2261,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-3.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-4.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -1968,7 +2284,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-4.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-5.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -1991,7 +2307,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-5.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-6.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2014,7 +2330,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-6.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-7.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2037,7 +2353,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-7.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-8.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2060,7 +2376,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-8.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-9.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2083,7 +2399,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-9.png",
+                  "image": "assets\\sprites\\CannomAimPlayer1-10.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2114,11 +2430,12 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"CannomAimPlayer2\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":16,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAQCAYAAABnaabpAAACXklEQVR4Xu2boU7EQBCGd3kAEiQGTU6gUVgqkdQhkdc3uDfgJPIcSGRrUWjEBY1BNuEBKKG3F9rl9jqZdnZI+59hQu7ypf/O/DvtTq3BBwpAASgwUQXsRK8blw0FoAAUMEEDzPO8auqTJElUswQf+iP/fhVA/cn4zx9T843H3ySkFwL8tvFB/7YCyD8ZI9iqPLX6axlg18VvRaImYbV8qLtIO09tKG6m9+D8heMvUlsFYlH+3PGXqa0CsSj/xvFXqa0CsSj/yvGfUlsF4lHztfXXzj/t+iP4T9AA1+t1a+udzWbsJwaXb6UpTo/q3/vxjznu2n0G5b+Upjh3fC+2iwj8vDRF4vhebJcR+I+lKa4d34vtKgL/vjTFreN7sX2aAF9bf+38066/ff5DMZ/td7gmSDHAZvfnm19vPmEBRPmEBBTlEwpQlE8wwFHztfXXzj/t+uMaYHZwXHvP3ddH/Te2AWafjn/Yk89cgOzd8U968pkJmL06/llPPrMAs2fHv+jJZxqgOl9bf+38066/GP6zrwOEAcIA6w0QBtivAeBuQDBA+QYMt8CbZ1Cit2DMDtB/6MruwJkFOBif2QGOhq+tv3b+Me/ABlt/yi1wlwlwi2/XwUfzQASHIBEOAQgFKLr+BAMcNV9bf4IBiupPMEBRPscA9x35YgyGNosVGn1p/l90DER7DANjMJsxMK0xJIzBdI7hYRDac/quWUSq+XNnhsDHIPgQzQfyj6YAXoUL6IRX8fAqXjM1pDc+Pw2Rf3HyL+r7vTRPxregABSAAnEUgAHG0RkUKAAF/qEC332zm5pZc02kAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAQCAYAAABnaabpAAABjklEQVR4Xu2bbRaCIBBFdRuultW6DTukJqDAg8I6cftVNjJynXnD+DEOfCAAAQh0SmDsdN5MGwIQgMAQFcB5nheXzzRNt4ol/uFP/B0EyL82+nMStV14QuCx7Z8uIvhfhQ/+fsATf9dxQf69R8ATQBtkuUqj2NQekjK2YoP/OgIKW8WmzvswKGMrNvivI6CwVWzqvH/n/BcLoJ1c2J7mJmxF1a3gqVVeToDxD3/iz788Qv6lCaT05yWALZX96vCMMYsxBv8bHPjnu49copf8T/yRf1Z/ECAE6EkAAUaAle6rpMikbH+lACGACCACSAHotgAigAggAogAIoAlbZBdvpYshW2vve8TfnfHUdsw/MOf+NMJkH9x/Sm+Cxz27vppyFsqAoh//+J1nqpuAf/8dUDi77/i7/QgtLtSc1Mntl1PL80S/+vqzr1Dvv2+3K5R1a3gD/+e4i/6elvYZoYJqadUnSX+/TYX/scjU3URVbYX8ddH/N36fm9ZCGINAQhAoC0BBLAtX0aHAAR+mMAD+p0QTfqya3EAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"paths\":[\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-1-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-2-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-3-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-4-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-5-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-6-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-7-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-8-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-9-0.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CannomAimPlayer2-10-0.png\"],\"name\":\"CannomAimPlayer2\",\"singleFrame\":false}}",
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-1.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-1-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2141,7 +2458,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-2.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-2-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2164,7 +2481,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-3.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-3-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2187,7 +2504,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-4.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-4-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2210,7 +2527,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-5.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-5-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2233,7 +2550,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-6.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-6-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2256,7 +2573,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-7.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-7-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2279,7 +2596,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-8.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-8-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2302,7 +2619,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-9.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-9-0.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -2325,7 +2642,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAimPlayer2-10.png",
+                  "image": "assets\\sprites\\CannomAimPlayer2-10-0.png",
                   "points": [
                     {
                       "name": "Shoot",

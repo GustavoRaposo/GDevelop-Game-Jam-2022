@@ -623,7 +623,8 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"CorePlayer1\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAgCAYAAABjE6FEAAAB5UlEQVR4Xu3dbYrCMBSFYbuNLrDryGq7jQ5Bq1I/KAPmBPL4ZwaJZDxN3vvm0jLT5fZa13Xbfz/+nOd5qu99G/P8mTPj9zHmvyYgf+vP/nufwBme/Jc/d7AdgfTpYvzi/br5zX8tMomX/K2/UffflFz8pZRtWZZLKnzzy9/6G3v/ASAAK0C3Fk9r+1aA8wUYAAEQAAEw0n7poQAAIAACIAACYGv9r/P1UAH0gMbuAbn+Y19/BsgAGSADZIAMsH0CDDjfBGeAgxtg+21vRglIQAJ9JBBR3z6+ur9CAhIYPQE9QD1APUA9wIgI9dACAkAABEAABMCECvdQATTBx26Cu/5jX38GyAAZIANkgAywfQIM2G0wDDRroAyQATJABsgA2/uPR+EYIANkgAyQgTCQYQ0EAAEQAAEQAANHMCeQsukB6gEqQArQsAUo8sUDxc6UEpCABF4SAECLQgISGDYBR2BHYEdgR+CICPXQgwRAAARAAATAhAP3UAHchpC9DUH+8k/+W1wGyAAZIANkgAywfQIM2JMgDDhrwAyQATJABsgA2/uPZ4EZIANkgGEDTICvzlk3fyklUnnML3/rz/6r/LkDqC6ITzDcQfVtzPNnz4w/ws/88rf+3idwZj/Zf48EzuS1j/kDN/Q8VJnaS2AAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"paths\":[\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-1.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-2.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-3.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-4.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-5.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-6.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-7.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-8.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-9.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\Core-0-10.png\"],\"name\":\"CorePlayer1\",\"singleFrame\":false}}",
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -805,7 +806,8 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"CorePlayer2\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":10,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAgCAYAAABjE6FEAAAB5UlEQVR4Xu3dbYrCMBSFYbuNLrDryGq7jQ5Bq1I/KAPmBPL4ZwaJZDxN3vvm0jLT5fZa13Xbfz/+nOd5qu99G/P8mTPj9zHmvyYgf+vP/nufwBme/Jc/d7AdgfTpYvzi/br5zX8tMomX/K2/UffflFz8pZRtWZZLKnzzy9/6G3v/ASAAK0C3Fk9r+1aA8wUYAAEQAAEw0n7poQAAIAACIAACYGv9r/P1UAH0gMbuAbn+Y19/BsgAGSADZIAMsH0CDDjfBGeAgxtg+21vRglIQAJ9JBBR3z6+ur9CAhIYPQE9QD1APUA9wIgI9dACAkAABEAABMCECvdQATTBx26Cu/5jX38GyAAZIANkgAywfQIM2G0wDDRroAyQATJABsgA2/uPR+EYIANkgAyQgTCQYQ0EAAEQAAEQAANHMCeQsukB6gEqQArQsAUo8sUDxc6UEpCABF4SAECLQgISGDYBR2BHYEdgR+CICPXQgwRAAARAAATAhAP3UAHchpC9DUH+8k/+W1wGyAAZIANkgAywfQIM2JMgDDhrwAyQATJABsgA2/uPZ4EZIANkgGEDTICvzlk3fyklUnnML3/rz/6r/LkDqC6ITzDcQfVtzPNnz4w/ws/88rf+3idwZj/Zf48EzuS1j/kDN/Q8VJnaS2AAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"paths\":[\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-1.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-2.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-3.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-4.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-5.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-6.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-7.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-8.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-9.png\",\"C:\\\\Users\\\\gusta\\\\Documents\\\\GDevelop projects\\\\GDevelop-Game-Jam-2022\\\\assets\\\\sprites\\\\CorePlayer2-10.png\"],\"name\":\"CorePlayer2\",\"singleFrame\":false}}",
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -1305,7 +1307,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\sprites\\Block2x2-1-1.png",
+                  "image": "assets\\sprites\\Block2x2-1-2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1338,6 +1340,64 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x2-1-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\Block2x2-1-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -1496,6 +1556,64 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BlockI-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BlockI-1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
