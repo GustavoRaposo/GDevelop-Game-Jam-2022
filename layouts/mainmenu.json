@@ -166,7 +166,7 @@
       "name": "Title",
       "persistentUuid": "864d70ad-1377-46e4-b4a7-263d6a63f665",
       "width": 336,
-      "x": 80,
+      "x": 96,
       "y": 16,
       "zOrder": 17,
       "numberProperties": [],
@@ -788,7 +788,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Treta tetris",
-      "font": "",
+      "font": "assets\\fonts\\04B_30__.TTF",
       "characterSize": 64,
       "color": {
         "b": 0,

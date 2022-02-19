@@ -2361,6 +2361,20 @@
         "name": "assets\\sprites\\TutorialIcon-10.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/fonts/04B_30__.TTF",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\04B_30__.TTF",
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/Retron2000.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\Retron2000.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
