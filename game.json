@@ -1814,67 +1814,553 @@
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/bullet-hit.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Explosion 3\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.07,\\\"sustainPunch\\\":0,\\\"decay\\\":0.48,\\\"tremoloDepth\\\":16,\\\"tremoloFrequency\\\":77,\\\"frequency\\\":10000,\\\"frequencySweep\\\":-2800,\\\"frequencyDeltaSweep\\\":-2100,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"brownnoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"bullet-hit\"}}",
-        "name": "assets\\sound\\effects\\bullet-hit.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayButton-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayButton-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-2-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-3-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-4-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-5-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-5-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-6-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-6-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-7-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-7-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-8-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-8-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-9-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-9-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/PlayIcon-10-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\PlayIcon-10-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-1.png",
+        "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/sound/effects/shoot.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Laser/shoot 35\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":0,\\\"decay\\\":0.09,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1000,\\\"frequencySweep\\\":-700,\\\"frequencyDeltaSweep\\\":-1500,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":350,\\\"vibratoFrequency\\\":69,\\\"squareDuty\\\":40,\\\"squareDutySweep\\\":-35,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"shoot\"}}",
-        "name": "assets\\sound\\effects\\shoot.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditsIcon-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditsIcon-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-2.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/block-fixed.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Hit/hurt 31\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.03,\\\"sustainPunch\\\":20,\\\"decay\\\":0.03,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":700,\\\"frequencySweep\\\":-900,\\\"frequencyDeltaSweep\\\":-200,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":-9300,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"block-fixed\"}}",
-        "name": "assets\\sound\\effects\\block-fixed.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-3.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/core-damage.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Explosion 10\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.07,\\\"sustainPunch\\\":90,\\\"decay\\\":0.49,\\\"tremoloDepth\\\":38,\\\"tremoloFrequency\\\":12,\\\"frequency\\\":6100,\\\"frequencySweep\\\":-3700,\\\"frequencyDeltaSweep\\\":-3800,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"pinknoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"core-damage\"}}",
-        "name": "assets\\sound\\effects\\core-damage.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-4.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/block-break.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Hit/hurt 88\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.08,\\\"sustainPunch\\\":70,\\\"decay\\\":0.06,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":900,\\\"frequencySweep\\\":-900,\\\"frequencyDeltaSweep\\\":-200,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":9,\\\"flangerOffsetSweep\\\":8,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":-22000,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"block-break\"}}",
-        "name": "assets\\sound\\effects\\block-break.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-8.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/select-block.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 16\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":300,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":55,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"select-block\"}}",
-        "name": "assets\\sound\\effects\\select-block.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CreditsIcon-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CreditsIcon-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-1.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sound/effects/game-over.wav",
-        "kind": "audio",
-        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Pickup/coin 53\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.07,\\\"sustainPunch\\\":90,\\\"decay\\\":0.37,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":300,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":95,\\\"squareDutySweep\\\":35,\\\"flangerOffset\\\":2,\\\"flangerOffsetSweep\\\":-2,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"game-over\"}}",
-        "name": "assets\\sound\\effects\\game-over.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-2.png",
+        "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TutorialIcon-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialIcon-10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TutorialIcon-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TutorialIcon-10.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1889,9 +2375,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 200,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 200
         },
         {
           "name": "Physics2",
@@ -2776,6 +3262,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/prototypecannonblock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
     }
   ],
   "externalEvents": [
@@ -2798,10 +3288,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/createcannonplayer1"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/shoot"
     }
   ],
   "eventsFunctionsExtensions": [
