@@ -1110,6 +1110,276 @@
         "name": "assets\\sprites\\BlockCannonSelected-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletPlayer1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletPlayer1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletPlayer2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletPlayer2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-2-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-3-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-4-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BulletOnCollisionPlayer1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BulletOnCollisionPlayer1-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CannonAimPlayer2-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CannonAimPlayer2-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CorePlayer2-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\CorePlayer2-10.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1149,16 +1419,16 @@
       ],
       "animations": [
         {
-          "name": "Bullet",
+          "name": "BulletPlayer1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\Bullet-1.png",
+                  "image": "assets\\sprites\\BulletPlayer1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1178,16 +1448,45 @@
           ]
         },
         {
-          "name": "BulletOnCollision",
+          "name": "BulletPlayer2",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BulletOnCollision-1.png",
+                  "image": "assets\\sprites\\BulletPlayer2-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BulletOnCollisionPlayer1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1204,7 +1503,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BulletOnCollision-2.png",
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-2-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1221,7 +1520,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BulletOnCollision-3.png",
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-3-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1238,7 +1537,87 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\BulletOnCollision-4.png",
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-4-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BulletOnCollisionPlayer2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BulletOnCollisionPlayer1-4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1380,240 +1759,362 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "CannonAim",
+          "name": "CannomAimPlayer1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.05000000074505806,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-1-6.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "image": "assets\\sprites\\CannonAim-1.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAim-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-2.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-3.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-4.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-5.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-6.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-7.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-8.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\CannonAim-9.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CannomAimPlayer2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprites\\CannonAim-10.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 36,
-                      "y": 8
-                    }
-                  ],
+                  "image": "assets\\sprites\\CannonAimPlayer2-2.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\CannonAimPlayer2-10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
