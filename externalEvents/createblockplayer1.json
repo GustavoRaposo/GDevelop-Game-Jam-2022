@@ -22,32 +22,7 @@
           "subInstructions": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "VariableString(TurnBlockCountPlayer1)",
-            "\"warning\"",
-            ""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "VariableString(TurnBlocks[Variable(TurnBlockCountPlayer1)])",
-            "\"warning\"",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
+      "actions": [],
       "events": [
         {
           "disabled": false,

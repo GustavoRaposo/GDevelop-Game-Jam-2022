@@ -1101,6 +1101,15 @@
         "name": "assets\\sprites\\BulletOnCollision-4.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockCannonSelected-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockCannonSelected-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1291,6 +1300,35 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprites\\BlockCannon-1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BlockCannon_Selected",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\BlockCannonSelected-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1591,7 +1629,7 @@
     {
       "name": "CannonId",
       "type": "number",
-      "value": 0
+      "value": 1
     }
   ],
   "layouts": [
