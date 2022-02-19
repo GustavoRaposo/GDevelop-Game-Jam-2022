@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.255,
+    "zoomFactor": 1.2799999999999998,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2982,7 +2982,7 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "CannonAim",
                   "conditions": [],
@@ -3188,7 +3188,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3301,7 +3301,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3414,7 +3414,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3444,7 +3444,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3489,7 +3489,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3715,7 +3715,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3745,7 +3745,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3923,7 +3923,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4234,7 +4234,7 @@
       "colorR": 155,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Cheats",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4271,6 +4271,36 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "c"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "CreateCannonPlayer1"
+            }
+          ]
         }
       ],
       "parameters": []
