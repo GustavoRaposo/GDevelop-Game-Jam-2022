@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.4800000000000042,
+    "zoomFactor": 1.2550000000000052,
     "windowMask": false
   },
   "objectsGroups": [
@@ -405,7 +405,7 @@
       "name": "Spawn",
       "persistentUuid": "b167096c-bb3f-4f5c-9259-c6327a9b9114",
       "width": 16,
-      "x": 80,
+      "x": 112,
       "y": -16,
       "zOrder": 11,
       "numberProperties": [],
@@ -427,7 +427,7 @@
       "name": "Spawn",
       "persistentUuid": "6b894aa7-b2ae-4a18-99bb-405931eba03f",
       "width": 16,
-      "x": 384,
+      "x": 368,
       "y": -16,
       "zOrder": 11,
       "numberProperties": [],
@@ -1498,7 +1498,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1735,7 +1735,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -1869,7 +1869,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2003,7 +2003,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2137,7 +2137,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -2576,7 +2576,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": true,
+                          "folded": false,
                           "name": "Create New Block",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -2587,7 +2587,7 @@
                               "colorR": 74,
                               "creationTime": 0,
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "name": "Player1 Create New Block",
                               "source": "",
                               "type": "BuiltinCommonInstructions::Group",
@@ -2728,14 +2728,14 @@
                               "colorR": 74,
                               "creationTime": 0,
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "name": "Player2 Create New Block",
                               "source": "",
                               "type": "BuiltinCommonInstructions::Group",
                               "events": [
                                 {
                                   "disabled": false,
-                                  "folded": true,
+                                  "folded": false,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
@@ -2992,7 +2992,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

@@ -38,8 +38,8 @@
               "parameters": [
                 "",
                 "BlockCannon",
-                "Spawn.CenterX()",
-                "Spawn.CenterY()",
+                "Spawn.X()",
+                "Spawn.Y()",
                 ""
               ],
               "subInstructions": []
@@ -78,8 +78,8 @@
               "parameters": [
                 "",
                 "CannonAim",
-                "Spawn.CenterX()",
-                "Spawn.CenterY()",
+                "Spawn.X()",
+                "Spawn.Y()",
                 ""
               ],
               "subInstructions": []

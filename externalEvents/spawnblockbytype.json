@@ -30,8 +30,8 @@
           "parameters": [
             "",
             "Block",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
@@ -90,8 +90,8 @@
           "parameters": [
             "",
             "Block1x2",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
@@ -150,8 +150,8 @@
           "parameters": [
             "",
             "Block2x1",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
@@ -210,8 +210,8 @@
           "parameters": [
             "",
             "Block2x2",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
@@ -270,8 +270,8 @@
           "parameters": [
             "",
             "BlockL",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
@@ -330,8 +330,8 @@
           "parameters": [
             "",
             "BlockI",
-            "Spawn.CenterX()",
-            "Spawn.CenterY()",
+            "Spawn.X()",
+            "Spawn.Y()",
             ""
           ],
           "subInstructions": []
