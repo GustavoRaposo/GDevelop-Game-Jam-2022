@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.4150000000000027,
+    "zoomFactor": 0.8550000000000022,
     "windowMask": false
   },
   "objectsGroups": [
@@ -557,13 +557,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 16,
+      "height": 32,
       "layer": "Background",
       "locked": false,
       "name": "tileBackgroung",
       "persistentUuid": "0931a9b8-c99f-4e32-a4df-54f52d7a6c7b",
-      "width": 464,
-      "x": 16,
+      "width": 480,
+      "x": -5.684341886080802e-14,
       "y": 288,
       "zOrder": 3,
       "numberProperties": [],
@@ -6443,6 +6443,17 @@
               "parameters": [
                 "DarkOverlay",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "StopMusicCanal"
+              },
+              "parameters": [
+                "",
+                "2"
               ],
               "subInstructions": []
             },
