@@ -2483,6 +2483,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/TileBackground-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\TileBackground-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3353,6 +3362,17 @@
           ]
         }
       ]
+    },
+    {
+      "height": 16,
+      "name": "tileBackgroung",
+      "tags": "",
+      "texture": "assets\\sprites\\TileBackground-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsGroups": [],
