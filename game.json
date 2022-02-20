@@ -17,7 +17,7 @@
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "GDevelop-Game-Jam-2022",
+    "name": "Treta Tetris",
     "author": "",
     "windowWidth": 480,
     "windowHeight": 320,
@@ -42,7 +42,9 @@
       "showGDevelopSplash": true,
       "showProgressBar": true
     },
-    "authorIds": [],
+    "authorIds": [
+      "1zv2mJEEIsYlQDJ7Na1xoNsltii1"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
