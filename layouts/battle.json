@@ -270,6 +270,14 @@
         {
           "type": "string",
           "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
         }
       ]
     },
@@ -277,6 +285,14 @@
       "name": "TurnBlocksPlayer1",
       "type": "array",
       "children": [
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
         {
           "type": "string",
           "value": ""
@@ -322,6 +338,14 @@
         {
           "type": "string",
           "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
         }
       ]
     },
@@ -333,7 +357,7 @@
     {
       "name": "MaxBlockNumberPerTurn",
       "type": "string",
-      "value": "6"
+      "value": "8"
     },
     {
       "name": "MaxBlockNumber",
@@ -3284,14 +3308,14 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Build Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3448,7 +3472,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3468,7 +3492,7 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3614,7 +3638,7 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Repeat",
-                      "repeatExpression": "5",
+                      "repeatExpression": "7",
                       "conditions": [],
                       "actions": [
                         {
@@ -3754,7 +3778,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4456,7 +4480,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4478,7 +4502,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -4623,7 +4647,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": true,
+                          "folded": false,
                           "name": "Create New Block",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
