@@ -121,6 +121,29 @@
           "name": "TextPlayerAgain"
         }
       ]
+    },
+    {
+      "name": "NormalBlocks",
+      "objects": [
+        {
+          "name": "Block"
+        },
+        {
+          "name": "Block1x2"
+        },
+        {
+          "name": "Block2x1"
+        },
+        {
+          "name": "Block2x2"
+        },
+        {
+          "name": "BlockL"
+        },
+        {
+          "name": "BlockI"
+        }
+      ]
     }
   ],
   "variables": [
@@ -575,7 +598,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "2"
+          "value": "3"
         },
         {
           "name": "Fixed",
@@ -1155,7 +1178,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "3"
+          "value": "4"
         },
         {
           "name": "Fixed",
@@ -1288,7 +1311,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "3"
+          "value": "4"
         },
         {
           "name": "Fixed",
@@ -1421,7 +1444,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "4"
+          "value": "5"
         },
         {
           "name": "Fixed",
@@ -1554,7 +1577,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "4"
+          "value": "5"
         },
         {
           "name": "Fixed",
@@ -1637,7 +1660,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "5"
+          "value": "6"
         },
         {
           "name": "Fixed",
@@ -2282,6 +2305,91 @@
           "events": []
         }
       ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Blocks Animation",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarObjet"
+          },
+          "parameters": [
+            "NormalBlocks",
+            "Health",
+            "=",
+            "2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangeAnimation"
+          },
+          "parameters": [
+            "NormalBlocks",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarObjet"
+          },
+          "parameters": [
+            "NormalBlocks",
+            "Health",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangeAnimation"
+          },
+          "parameters": [
+            "NormalBlocks",
+            "=",
+            "2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     },
     {
       "colorB": 35,
