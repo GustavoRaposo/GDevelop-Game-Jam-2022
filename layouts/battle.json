@@ -2560,6 +2560,16 @@
                             ""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VariableClearChildren"
+                          },
+                          "parameters": [
+                            "TurnBlocks"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -2612,7 +2622,7 @@
                           "parameters": [
                             "cannonIndex",
                             "=",
-                            "RandomInRange(1, VariableChildCount(TurnBlocks)-1)"
+                            "RandomInRange(0, VariableChildCount(TurnBlocks)-1)"
                           ],
                           "subInstructions": []
                         }
@@ -2727,27 +2737,6 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "\"Build main\"",
-                        "\"info\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
@@ -2760,7 +2749,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3028,7 +3017,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3162,7 +3151,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3314,7 +3303,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3609,7 +3598,7 @@
                                   "events": [
                                     {
                                       "disabled": false,
-                                      "folded": true,
+                                      "folded": false,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3640,7 +3629,7 @@
                                     },
                                     {
                                       "disabled": false,
-                                      "folded": true,
+                                      "folded": false,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3855,7 +3844,7 @@
                       },
                       "parameters": [
                         "turnBlocksFixedCount",
-                        "=",
+                        ">=",
                         "Variable(MaxBlockNumberPerTurn) * 2"
                       ],
                       "subInstructions": []
@@ -3906,7 +3895,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "BlockCannon",
                   "conditions": [],
@@ -5884,7 +5873,7 @@
       "colorR": 155,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Cheats & Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6089,7 +6078,52 @@
               "parameters": [
                 "Debug",
                 "+",
-                "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer2) + NewLine() + NewLine()"
+                "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer2) + NewLine() + NewLine() + \"Turn Blocks: [\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "TurnBlocks",
+          "valueIteratorVariableName": "turnBlock",
+          "keyIteratorVariableName": "index",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "+",
+                "VariableString(turnBlock) + \",\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "+",
+                "\"]\""
               ],
               "subInstructions": []
             }
