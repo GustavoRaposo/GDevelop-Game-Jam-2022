@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 2.964999999999999,
+    "zoomFactor": 0.5400000000000035,
     "windowMask": false
   },
   "objectsGroups": [
@@ -691,6 +691,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "GlobalLight",
+      "persistentUuid": "681bf71c-ecad-4a47-a657-7f1dfe188c38",
+      "width": 0,
+      "x": 240,
+      "y": -4,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "CoreLightPlayer1",
+      "persistentUuid": "fc89ce4a-42fd-4d84-a35e-f7a5123ca630",
+      "width": 0,
+      "x": 48,
+      "y": 272,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "CoreLightPlayer2",
+      "persistentUuid": "f69304e6-5541-46e1-9ad2-5349b7f600c3",
+      "width": 0,
+      "x": 432,
+      "y": 272,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -855,7 +903,34 @@
           "value": "Player"
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Glow_Player1",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "131;105;247"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Glow",
+          "name": "Glow_Player2",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "255;125;184"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -2125,6 +2200,48 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "name": "GlobalLight",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 400,
+        "color": "255;255;255",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "name": "CoreLightPlayer2",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 200,
+        "color": "255;125;184",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "name": "CoreLightPlayer1",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 200,
+        "color": "131;105;247",
+        "debugMode": false,
+        "texture": ""
+      }
     }
   ],
   "events": [
@@ -2219,6 +2336,42 @@
           "parameters": [
             "Core",
             "Core.VariableString(Player)"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "EnableEffect"
+          },
+          "parameters": [
+            "Core",
+            "\"Glow_Player1\"",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "EnableEffect"
+          },
+          "parameters": [
+            "Core",
+            "\"Glow_Player2\"",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "EnableEffect"
+          },
+          "parameters": [
+            "Core",
+            "\"Glow_\" + Core.VariableString(Player)",
+            "yes"
           ],
           "subInstructions": []
         }
@@ -5966,6 +6119,17 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 128,
+      "ambientLightColorG": 128,
+      "ambientLightColorR": 128,
+      "followBaseLayerCamera": true,
+      "isLightingLayer": true,
+      "name": "Lighting",
+      "visibility": true,
+      "cameras": [],
       "effects": []
     }
   ],
