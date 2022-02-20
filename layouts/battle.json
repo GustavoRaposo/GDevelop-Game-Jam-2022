@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.4100000000000008,
+    "zoomFactor": 1.3900000000000008,
     "windowMask": false
   },
   "objectsGroups": [
@@ -194,7 +194,7 @@
     {
       "name": "BlockSpeed",
       "type": "number",
-      "value": 0.2
+      "value": 0.17
     },
     {
       "name": "BlockMoveDIstance",
@@ -866,7 +866,7 @@
         {
           "name": "Health",
           "type": "number",
-          "value": 3
+          "value": 5
         },
         {
           "name": "Player",
@@ -1583,7 +1583,7 @@
         {
           "name": "Health",
           "type": "string",
-          "value": "5"
+          "value": "6"
         },
         {
           "name": "Fixed",
@@ -3321,14 +3321,14 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Build Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3485,7 +3485,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3505,7 +3505,7 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3791,7 +3791,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3815,7 +3815,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4425,7 +4425,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4493,7 +4493,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4515,7 +4515,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5088,7 +5088,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

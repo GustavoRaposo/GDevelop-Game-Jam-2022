@@ -2942,12 +2942,12 @@
         {
           "name": "MinAngle",
           "type": "number",
-          "value": -45
+          "value": -70
         },
         {
           "name": "MaxAngle",
           "type": "number",
-          "value": 45
+          "value": 70
         },
         {
           "name": "Selected",
@@ -2957,7 +2957,7 @@
         {
           "name": "Cooldown",
           "type": "number",
-          "value": 0.5
+          "value": 0.7
         }
       ],
       "effects": [
@@ -3492,7 +3492,7 @@
     {
       "name": "Debug",
       "type": "boolean",
-      "value": true
+      "value": false
     }
   ],
   "layouts": [
