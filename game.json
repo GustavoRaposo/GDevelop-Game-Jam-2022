@@ -3486,6 +3486,11 @@
       "name": "TurnTransitionInterval",
       "type": "number",
       "value": 3
+    },
+    {
+      "name": "Debug",
+      "type": "boolean",
+      "value": true
     }
   ],
   "layouts": [

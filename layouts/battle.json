@@ -7605,7 +7605,7 @@
       "colorR": 155,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Cheats & Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7618,44 +7618,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "KeyReleased"
+                "value": "GlobalVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "r"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Battle\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "c"
+                "Debug",
+                "True"
               ],
               "subInstructions": []
             }
@@ -7665,11 +7632,254 @@
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Link",
-              "include": {
-                "includeConfig": 0
-              },
-              "target": "CreateCannonPlayer1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "r"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Battle\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "c"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "CreateCannonPlayer1"
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "=",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "\"Player1\" + NewLine() + \"Cannons: [\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "CannonsPlayer1",
+              "valueIteratorVariableName": "cannonId",
+              "keyIteratorVariableName": "index",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "VariableString(cannonId) + \",\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer1) + NewLine() + NewLine()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "\"Player2\" + NewLine() + \"Cannons: [\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "CannonsPlayer2",
+              "valueIteratorVariableName": "cannonId",
+              "keyIteratorVariableName": "index",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "VariableString(cannonId) + \",\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer2) + NewLine() + NewLine() + \"Turn Blocks: [\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "TurnBlocks",
+              "valueIteratorVariableName": "turnBlock",
+              "keyIteratorVariableName": "index",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "VariableString(turnBlock) + \",\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "+",
+                    "\"]\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ]
         },
@@ -7677,185 +7887,35 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "conditions": [
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::String"
+                "value": "GlobalVariableAsBoolean"
               },
               "parameters": [
                 "Debug",
-                "=",
-                "\"\""
+                "False"
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::String"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "Debug",
-                "+",
-                "\"Player1\" + NewLine() + \"Cannons: [\""
-              ],
+              "parameters": [],
               "subInstructions": []
             }
           ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEachChildVariable",
-          "iterableVariableName": "CannonsPlayer1",
-          "valueIteratorVariableName": "cannonId",
-          "keyIteratorVariableName": "index",
-          "conditions": [],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::String"
+                "value": "Cache"
               },
               "parameters": [
-                "Debug",
-                "+",
-                "VariableString(cannonId) + \",\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer1) + NewLine() + NewLine()"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "\"Player2\" + NewLine() + \"Cannons: [\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEachChildVariable",
-          "iterableVariableName": "CannonsPlayer2",
-          "valueIteratorVariableName": "cannonId",
-          "keyIteratorVariableName": "index",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "VariableString(cannonId) + \",\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "\"]\" + NewLine() + \"Selected: \" + VariableString(SelectedCannonPlayer2) + NewLine() + NewLine() + \"Turn Blocks: [\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEachChildVariable",
-          "iterableVariableName": "TurnBlocks",
-          "valueIteratorVariableName": "turnBlock",
-          "keyIteratorVariableName": "index",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "VariableString(turnBlock) + \",\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Debug",
-                "+",
-                "\"]\""
+                "Debug"
               ],
               "subInstructions": []
             }
