@@ -59,6 +59,18 @@
             "\"tetris\""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "BlockCount",
+            "+",
+            "1"
+          ],
+          "subInstructions": []
         }
       ],
       "events": []
