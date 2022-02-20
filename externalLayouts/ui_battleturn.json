@@ -1,0 +1,51 @@
+{
+  "associatedLayout": "Battle",
+  "name": "UI_BattleTurn",
+  "instances": [
+    {
+      "angle": 6.518784999847412,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBattleTurn",
+      "persistentUuid": "33724eed-9d80-4313-ba05-1bcf7eb3f274",
+      "width": 0,
+      "x": 63.243370056152344,
+      "y": 85.88237762451172,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBattleTurnDescription",
+      "persistentUuid": "722c796f-9f78-4912-b814-28f4a4fa2050",
+      "width": 0,
+      "x": 101,
+      "y": 205,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 1,
+    "windowMask": false
+  }
+}

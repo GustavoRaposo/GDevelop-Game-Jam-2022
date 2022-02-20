@@ -1,0 +1,83 @@
+{
+  "associatedLayout": "Battle",
+  "name": "UI_GameOver",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextGameOver",
+      "persistentUuid": "16a26719-9aa6-4cc1-a807-6975c04c6dfc",
+      "width": 0,
+      "x": 77,
+      "y": 64,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextGameOverWinner",
+      "persistentUuid": "b280e6ae-3ca4-4bc8-9fbc-864c90c57545",
+      "width": 0,
+      "x": 180,
+      "y": 190,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "",
+      "locked": false,
+      "name": "ButtonPlay",
+      "persistentUuid": "45bc4d94-a0a5-4181-b909-545e3b6de1ee",
+      "width": 96,
+      "x": 195,
+      "y": 256,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextPlayerAgain",
+      "persistentUuid": "8b79eda5-b491-418b-ac3b-a46508984f11",
+      "width": 0,
+      "x": 203,
+      "y": 270,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 1,
+    "windowMask": false
+  }
+}

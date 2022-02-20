@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5400000000000035,
+    "zoomFactor": 0.7650000000000037,
     "windowMask": false
   },
   "objectsGroups": [
@@ -501,134 +501,6 @@
       "initialVariables": []
     },
     {
-      "angle": 351.82208251953125,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextBuildTurn",
-      "persistentUuid": "d417f4a7-39f7-4bc7-99fd-273852feb82e",
-      "width": 0,
-      "x": 83.5853500366211,
-      "y": 64.89606475830078,
-      "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextBuildTurnDescription",
-      "persistentUuid": "fadec8ce-fbb8-41bf-8b1d-00db62db7fa4",
-      "width": 0,
-      "x": 96,
-      "y": 174,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextBattleTurnDescription",
-      "persistentUuid": "9cf36d7e-6608-4148-a478-3162c71ca589",
-      "width": 0,
-      "x": 111,
-      "y": 173,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 6.518784999847412,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextBattleTurn",
-      "persistentUuid": "923de9fb-71f2-4905-836a-af816432647c",
-      "width": 0,
-      "x": 49.24336624145508,
-      "y": 62.117618560791016,
-      "zOrder": 16,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 48,
-      "layer": "",
-      "locked": false,
-      "name": "ButtonPlay",
-      "persistentUuid": "1f48efbd-b34e-431d-bdca-df256535f0fe",
-      "width": 96,
-      "x": 192,
-      "y": 208,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextGameOver",
-      "persistentUuid": "c903d57f-5de2-437e-ae89-5b9770930b9d",
-      "width": 0,
-      "x": 74,
-      "y": 16,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextGameOverWinner",
-      "persistentUuid": "4b69fc3d-5f03-4efc-9008-2c5e5bd28f95",
-      "width": 0,
-      "x": 177,
-      "y": 142,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextPlayerAgain",
-      "persistentUuid": "960bdc60-f589-45a5-83ff-c850ae2efb7a",
-      "width": 0,
-      "x": 200,
-      "y": 222,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 0,
       "customSize": true,
       "height": 336,
@@ -688,54 +560,6 @@
       "x": 176,
       "y": -32,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Lighting",
-      "locked": false,
-      "name": "GlobalLight",
-      "persistentUuid": "681bf71c-ecad-4a47-a657-7f1dfe188c38",
-      "width": 0,
-      "x": 240,
-      "y": -4,
-      "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Lighting",
-      "locked": false,
-      "name": "CoreLightPlayer1",
-      "persistentUuid": "fc89ce4a-42fd-4d84-a35e-f7a5123ca630",
-      "width": 0,
-      "x": 48,
-      "y": 272,
-      "zOrder": 25,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Lighting",
-      "locked": false,
-      "name": "CoreLightPlayer2",
-      "persistentUuid": "f69304e6-5541-46e1-9ad2-5349b7f600c3",
-      "width": 0,
-      "x": 432,
-      "y": 272,
-      "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2066,15 +1890,34 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 1,
+            "blur": 2,
+            "distance": 1,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "#000000"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [],
       "string": "Build Turn",
       "font": "assets\\fonts\\04B_30__.TTF",
-      "characterSize": 42,
+      "characterSize": 48,
       "color": {
-        "b": 228,
-        "g": 228,
-        "r": 228
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -2280,73 +2123,12 @@
         {
           "type": {
             "inverted": false,
-            "value": "ResetObjectTimer"
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
-            "Blocks",
-            "\"tetris\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "Cache"
-          },
-          "parameters": [
-            "Floor"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "Cache"
-          },
-          "parameters": [
-            "UI_BuildTurn"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "Cache"
-          },
-          "parameters": [
-            "UI_BattleTurn"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "Cache"
-          },
-          "parameters": [
-            "UI_GameOver"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetAnimationName"
-          },
-          "parameters": [
-            "Core",
-            "Core.VariableString(Player)"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "EnableEffect"
-          },
-          "parameters": [
-            "Core",
-            "\"Glow_Player1\"",
+            "",
+            "\"Lights\"",
+            "",
             ""
           ],
           "subInstructions": []
@@ -2354,11 +2136,12 @@
         {
           "type": {
             "inverted": false,
-            "value": "EnableEffect"
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
-            "Core",
-            "\"Glow_Player2\"",
+            "",
+            "\"UI_BuildTurn\"",
+            "",
             ""
           ],
           "subInstructions": []
@@ -2366,17 +2149,139 @@
         {
           "type": {
             "inverted": false,
-            "value": "EnableEffect"
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
-            "Core",
-            "\"Glow_\" + Core.VariableString(Player)",
-            "yes"
+            "",
+            "\"UI_BattleTurn\"",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"UI_GameOver\"",
+            "",
+            ""
           ],
           "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Floor"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "UI_BuildTurn"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "UI_BattleTurn"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "UI_GameOver"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Core",
+                "Core.VariableString(Player)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "Core",
+                "\"Glow_\" + Core.VariableString(Player)",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "Core",
+                "\"Glow_Player1\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "Core",
+                "\"Glow_Player2\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Blocks",
+                "\"tetris\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "colorB": 35,

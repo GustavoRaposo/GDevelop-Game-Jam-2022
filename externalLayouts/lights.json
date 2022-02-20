@@ -1,0 +1,67 @@
+{
+  "associatedLayout": "Battle",
+  "name": "Lights",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "GlobalLight",
+      "persistentUuid": "f3ce3de9-f476-4b13-a96c-28c2ceb2ec09",
+      "width": 0,
+      "x": 244,
+      "y": 0,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "CoreLightPlayer1",
+      "persistentUuid": "605bdf99-f9d1-4791-b61d-7316b962ac71",
+      "width": 0,
+      "x": 52,
+      "y": 272,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "locked": false,
+      "name": "CoreLightPlayer2",
+      "persistentUuid": "a2ebf51f-bacc-4fdd-8494-e13c13f2a36d",
+      "width": 0,
+      "x": 436,
+      "y": 272,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7249999999999998,
+    "windowMask": false
+  }
+}
