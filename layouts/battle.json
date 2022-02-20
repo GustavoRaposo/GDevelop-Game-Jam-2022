@@ -144,6 +144,50 @@
           "name": "BlockI"
         }
       ]
+    },
+    {
+      "name": "UI_Pause",
+      "objects": [
+        {
+          "name": "TextPauseTitle"
+        },
+        {
+          "name": "TextContinue"
+        },
+        {
+          "name": "TextExit"
+        },
+        {
+          "name": "A"
+        },
+        {
+          "name": "Arrow"
+        },
+        {
+          "name": "W"
+        },
+        {
+          "name": "S"
+        },
+        {
+          "name": "D"
+        },
+        {
+          "name": "Key"
+        },
+        {
+          "name": "TextPlayer1Controls"
+        },
+        {
+          "name": "TextPlayer2Controls"
+        },
+        {
+          "name": "TextMoveBlocks"
+        },
+        {
+          "name": "Aim"
+        }
+      ]
     }
   ],
   "variables": [
@@ -2278,6 +2322,390 @@
           ]
         }
       ]
+    },
+    {
+      "name": "TextExit",
+      "tags": "ui",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]quit[/b]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "228;228;228",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "TextContinue",
+      "tags": "ui",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]continue[/b]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "228;228;228",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "TextPauseTitle",
+      "tags": "ui",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[shadow=black][b]Pause[/b][/shadow]",
+        "opacity": 255,
+        "fontSize": 64,
+        "visible": true,
+        "color": "228;228;228",
+        "fontFamily": "assets\\fonts\\04B_30__.TTF",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "NewObject",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "TextPlayer2Controls",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[shadow=black]Player 2[/shadow]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;144;167",
+        "fontFamily": "assets\\fonts\\04B_30__.TTF",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "TextPlayer1Controls",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[shadow=black]Player 1[/shadow]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "128;128;255",
+        "fontFamily": "assets\\fonts\\04B_30__.TTF",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "W",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\letter-w-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "S",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\letter-s-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\letter-a-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\letter-d-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arrow",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\arrow-up-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TextMoveBlocks",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "move blocks / select cannon",
+        "opacity": 255,
+        "fontSize": 9,
+        "visible": true,
+        "color": "228;228;228",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Aim",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Aim",
+        "opacity": 255,
+        "fontSize": 9,
+        "visible": true,
+        "color": "228;228;228",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Key",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\TileBackground-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -2364,6 +2792,32 @@
             ""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"UI_GameOver\"",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"UI_Pause\"",
+            "0",
+            "0"
+          ],
+          "subInstructions": []
         }
       ],
       "events": [
@@ -2410,6 +2864,16 @@
               },
               "parameters": [
                 "UI_GameOver"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "UI_Pause"
               ],
               "subInstructions": []
             },
@@ -4322,14 +4786,14 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6128,7 +6592,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game Over Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6409,7 +6873,7 @@
                 "DarkOverlay",
                 "0",
                 "0",
-                "\"UI\""
+                "\"Pause\""
               ],
               "subInstructions": []
             },
@@ -6434,6 +6898,17 @@
                 "DarkOverlay",
                 "=",
                 "100"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "UI_Pause",
+                ""
               ],
               "subInstructions": []
             },
@@ -6478,6 +6953,229 @@
               },
               "parameters": [
                 "Pause",
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TextContinue",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TextContinue",
+                    "\"238;225;176\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ToggleSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Pause"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TextExit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TextExit",
+                    "\"238;225;176\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "Pause",
+                        "\"MainMenu\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TextContinue",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TextContinue",
+                    "\"228;228;228\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TextExit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TextExit",
+                    "\"228;228;228\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Pause",
                 "False"
               ],
               "subInstructions": []
@@ -6500,6 +7198,16 @@
               "parameters": [
                 "",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "UI_Pause"
               ],
               "subInstructions": []
             },
@@ -6872,6 +7580,17 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "UI",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 9679104,
+      "ambientLightColorG": 6031344,
+      "ambientLightColorR": 9549568,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Pause",
       "visibility": true,
       "cameras": [],
       "effects": []
