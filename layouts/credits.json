@@ -12,23 +12,308 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1,
+    "snap": true,
+    "zoomFactor": 0.7999999999999994,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Text",
+      "objects": [
+        {
+          "name": "MusicTitle"
+        },
+        {
+          "name": "Music"
+        },
+        {
+          "name": "Developers"
+        },
+        {
+          "name": "DevelopersTitle"
+        }
+      ]
+    }
+  ],
   "variables": [],
-  "instances": [],
-  "objects": [],
-  "events": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 31,
+      "layer": "",
+      "locked": false,
+      "name": "MusicTitle",
+      "persistentUuid": "fa5f13b6-5a00-4842-a457-95b71fdbc5e9",
+      "width": 112,
+      "x": 176,
+      "y": 336,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 194,
+      "layer": "",
+      "locked": false,
+      "name": "Music",
+      "persistentUuid": "c424910c-7d9d-4b7d-a18d-de567d5a3bc9",
+      "width": 384,
+      "x": 32,
+      "y": 381,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "",
+      "locked": false,
+      "name": "Developers",
+      "persistentUuid": "8c5bdf9b-31bc-40ff-b8a3-c862e449ca1e",
+      "width": 128,
+      "x": 176,
+      "y": 640,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 31,
+      "layer": "",
+      "locked": false,
+      "name": "DevelopersTitle",
+      "persistentUuid": "0158b441-4147-40e9-830f-5fd5ecd5a3a6",
+      "width": 176,
+      "x": 144,
+      "y": 592,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 31,
+      "layer": "",
+      "locked": false,
+      "name": "MusicTitle",
+      "persistentUuid": "2c21fd10-cfad-4c58-b69b-2a57eb3bb8f6",
+      "width": 112,
+      "x": 176,
+      "y": 336,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "MusicTitle",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Musics",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\fonts\\04B_30__.TTF",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Music",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Eric Matyas:\n\n“Blissful Trance”\n\"Frantic Gameplay\"\n\"Friendly Machines\"\n\"Techno Celebration\"\n\nDan Barton:\n\n\"The Executive Lounge\"\nMusic from Uppbeat (free for Creators!):\nhttps://uppbeat.io/t/dan-barton/the-executive-lounge",
+        "opacity": 255,
+        "fontSize": 12,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Developers",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Leandro Dotta\nGustavo Raposo",
+        "opacity": 255,
+        "fontSize": 12,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "DevelopersTitle",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Developers",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\fonts\\04B_30__.TTF",
+        "align": "center",
+        "wordWrap": true
+      }
+    }
+  ],
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Text",
+            "\"credits\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Text",
+            "\"credits\"",
+            ">=",
+            "0.5"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Text",
+            "-",
+            "16"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Text",
+            "\"credits\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BoundingBoxBottom"
+              },
+              "parameters": [
+                "Developers",
+                "<=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 9159560,
