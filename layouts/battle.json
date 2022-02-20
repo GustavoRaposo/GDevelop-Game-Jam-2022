@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.565000000000006,
+    "zoomFactor": 1.0150000000000057,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2139,7 +2139,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2159,7 +2159,7 @@
               "events": [
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2260,6 +2260,21 @@
                             ""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlayMusicCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\music\\Friendly-Machines.mp3",
+                            "1",
+                            "",
+                            "5",
+                            ""
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -2323,7 +2338,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3082,7 +3097,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3155,76 +3170,24 @@
                             "\"tetris\""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\block-fixed.wav",
+                            "2",
+                            "",
+                            "50",
+                            "Random(10)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": [
-                        {
-                          "disabled": true,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarScene"
-                                  },
-                                  "parameters": [
-                                    "TurnBlockCountPlayer1",
-                                    "=",
-                                    "Variable(MaxBlockNumberPerTurn)-1"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarScene"
-                                  },
-                                  "parameters": [
-                                    "TurnBlockCountPlayer2",
-                                    "=",
-                                    "Variable(MaxBlockNumberPerTurn)-1"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarSceneTxt"
-                              },
-                              "parameters": [
-                                "Turn",
-                                "=",
-                                "\"battle\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarSceneTxt"
-                              },
-                              "parameters": [
-                                "BuildState",
-                                "=",
-                                "\"start\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
                         {
                           "disabled": false,
                           "folded": false,
@@ -3361,7 +3324,7 @@
                                   "events": [
                                     {
                                       "disabled": false,
-                                      "folded": false,
+                                      "folded": true,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3392,7 +3355,7 @@
                                     },
                                     {
                                       "disabled": false,
-                                      "folded": false,
+                                      "folded": true,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3502,7 +3465,7 @@
                                   "events": [
                                     {
                                       "disabled": false,
-                                      "folded": false,
+                                      "folded": true,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3533,7 +3496,7 @@
                                     },
                                     {
                                       "disabled": false,
-                                      "folded": false,
+                                      "folded": true,
                                       "type": "BuiltinCommonInstructions::Standard",
                                       "conditions": [
                                         {
@@ -3744,7 +3707,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3919,6 +3882,21 @@
                             "\"main\""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlayMusicCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\music\\Frantic-Gameplay_v001.mp3",
+                            "1",
+                            "",
+                            "20",
+                            ""
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -3950,197 +3928,11 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
                   },
-                  "comment": "Cannon Shoot",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "CannonAim",
-                  "conditions": [],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CompareObjectTimer"
-                              },
-                              "parameters": [
-                                "CannonAim",
-                                "\"shoot\"",
-                                ">=",
-                                "CannonAim.Variable(Cooldown)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "CannonAim",
-                                "Player",
-                                "=",
-                                "\"Player1\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bullet",
-                            "CannonAim.PointX(\"Shoot\")",
-                            "CannonAim.PointY(\"Shoot\") - 4",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Physics2::ApplyPolarForce"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            "Physics2",
-                            "CannonAim.Angle()",
-                            "2",
-                            "1",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "CannonAim",
-                            "\"shoot\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CompareObjectTimer"
-                              },
-                              "parameters": [
-                                "CannonAim",
-                                "\"shoot\"",
-                                ">=",
-                                "CannonAim.Variable(Cooldown)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "CannonAim",
-                                "Player",
-                                "=",
-                                "\"Player2\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bullet",
-                            "CannonAim.PointX(\"Shoot\") - 8",
-                            "CannonAim.PointY(\"Shoot\") - 4",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Physics2::ApplyPolarForce"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            "Physics2",
-                            "CannonAim.Angle()-180",
-                            "2",
-                            "1",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "CannonAim",
-                            "\"shoot\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
+                  "target": "Shoot"
                 },
                 {
                   "colorB": 228,
@@ -4148,7 +3940,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4411,7 +4203,23 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\select-block.wav",
+                            "2",
+                            "",
+                            "20",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": [
                         {
                           "disabled": false,
@@ -4441,7 +4249,23 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\select-block.wav",
+                            "2",
+                            "",
+                            "20",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": [
                         {
                           "disabled": false,
@@ -4712,7 +4536,23 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\select-block.wav",
+                            "2",
+                            "",
+                            "20",
+                            "2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": [
                         {
                           "disabled": false,
@@ -4742,7 +4582,23 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\select-block.wav",
+                            "2",
+                            "",
+                            "20",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": [
                         {
                           "disabled": false,
@@ -4764,7 +4620,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Collisions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4793,6 +4649,20 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "BulletParticle",
+                            "Bullet.CenterX()",
+                            "Bullet.CenterY()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "Delete"
                           },
                           "parameters": [
@@ -4804,13 +4674,14 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Create"
+                            "value": "PlaySoundCanal"
                           },
                           "parameters": [
                             "",
-                            "BulletParticle",
-                            "Bullet.CenterX()",
-                            "Bullet.CenterY()",
+                            "assets\\sound\\effects\\bullet-hit.wav",
+                            "2",
+                            "50",
+                            "Random(10)",
                             ""
                           ],
                           "subInstructions": []
@@ -4842,17 +4713,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "Create"
                           },
                           "parameters": [
@@ -4860,6 +4720,17 @@
                             "BulletParticle",
                             "Bullet.CenterX()",
                             "Bullet.CenterY()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Bullet",
                             ""
                           ],
                           "subInstructions": []
@@ -4904,17 +4775,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "Create"
                           },
                           "parameters": [
@@ -4929,12 +4789,38 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "ModVarObjet"
                           },
                           "parameters": [
                             "Core",
                             "Health",
                             "-",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\core-damage.wav",
+                            "2",
+                            "",
+                            "30",
                             "1"
                           ],
                           "subInstructions": []
@@ -4947,7 +4833,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5144,6 +5030,21 @@
                           "parameters": [
                             "Blocks",
                             ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\sound\\effects\\block-break.wav",
+                            "2",
+                            "",
+                            "30",
+                            "1"
                           ],
                           "subInstructions": []
                         }
@@ -5565,6 +5466,36 @@
                     "TextGameOverWinner",
                     "=",
                     "VariableString(Winner) + \" Won!\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sound\\effects\\game-over.wav",
+                    "2",
+                    "",
+                    "70",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sound\\music\\Blissful-Trance.mp3",
+                    "1",
+                    "",
+                    "20",
+                    ""
                   ],
                   "subInstructions": []
                 }

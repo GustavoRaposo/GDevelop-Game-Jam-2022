@@ -2374,6 +2374,114 @@
         "kind": "font",
         "metadata": "",
         "name": "assets\\fonts\\Retron2000.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/music/Blissful-Trance.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\music\\Blissful-Trance.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/music/Friendly-Machines.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\music\\Friendly-Machines.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/music/Frantic-Gameplay_v001.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\music\\Frantic-Gameplay_v001.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/block-break.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\block-break.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/block-fixed.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\block-fixed.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/bullet-hit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\bullet-hit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/core-damage.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\core-damage.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/game-over.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\game-over.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/select-block.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\select-block.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/effects/shoot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\effects\\shoot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/music/Techno-Celebration-Looping.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\music\\Techno-Celebration-Looping.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/music/the-executive-lounge-dan-barton-main-version-01-00-8850.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\music\\the-executive-lounge-dan-barton-main-version-01-00-8850.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
         "userAdded": true
       }
     ],
@@ -3302,6 +3410,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/createcannonplayer1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/shoot"
     }
   ],
   "eventsFunctionsExtensions": [

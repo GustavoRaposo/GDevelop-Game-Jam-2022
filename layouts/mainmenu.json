@@ -826,6 +826,184 @@
         {
           "type": {
             "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\block-break.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\block-break.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\bullet-hit.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\core-damage.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\game-over.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\select-block.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\shoot.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\effects\\game-over.wav"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\Frantic-Gameplay_v001.mp3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\Blissful-Trance.mp3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\Friendly-Machines.mp3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\Techno-Celebration-Looping.mp3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\the-executive-lounge-dan-barton-main-version-01-00-8850.mp3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\music\\Blissful-Trance.mp3",
+            "1",
+            "",
+            "20",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
             "value": "MouseButtonReleased"
           },
           "parameters": [

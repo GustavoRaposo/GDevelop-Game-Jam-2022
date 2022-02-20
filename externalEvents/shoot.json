@@ -96,13 +96,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlaySound"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
                 "assets\\sound\\effects\\shoot.wav",
+                "2",
                 "",
-                "10",
+                "30",
                 "Random(10)"
               ],
               "subInstructions": []
@@ -195,13 +196,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlaySound"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
                 "assets\\sound\\effects\\shoot.wav",
+                "2",
                 "",
-                "10",
+                "30",
                 "Random(10)"
               ],
               "subInstructions": []
