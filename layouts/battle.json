@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.5150000000000023,
+    "zoomFactor": 1.4150000000000027,
     "windowMask": false
   },
   "objectsGroups": [
@@ -320,6 +320,11 @@
       "name": "Winner",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "BattleDuration",
+      "type": "number",
+      "value": 30
     }
   ],
   "instances": [
@@ -630,6 +635,22 @@
           "value": "Player2"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextBattleTimer",
+      "persistentUuid": "a897b284-a623-42ef-8cc3-14ee2d80acc3",
+      "width": 0,
+      "x": 226,
+      "y": 19,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2169,6 +2190,44 @@
       ],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "TextBattleTimer",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "--",
+      "font": "assets\\fonts\\Retron2000.ttf",
+      "characterSize": 24,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "name": "Teste",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "--",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\fonts\\Retron2000.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
     }
   ],
   "events": [
@@ -2485,7 +2544,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2622,7 +2681,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2671,6 +2730,18 @@
                             "\"Build start\"",
                             "\"info\"",
                             ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "TextBattleTimer",
+                            "=",
+                            "\"--\""
                           ],
                           "subInstructions": []
                         },
@@ -4227,17 +4298,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"battle\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ResetObjectTimer"
                       },
                       "parameters": [
@@ -4369,6 +4429,17 @@
                             ""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"battle\""
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -4400,6 +4471,27 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "TextBattleTimer",
+                        "=",
+                        "ToString(round(abs(TimerElapsedTime(\"battle\")-Variable(BattleDuration))))"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Link",
                   "include": {
                     "includeConfig": 0
@@ -4412,7 +4504,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5092,7 +5184,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Collisions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5260,7 +5352,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5281,7 +5373,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::ForEach",
                       "object": "BlockCannon",
                       "conditions": [
@@ -5634,7 +5726,7 @@
                         "",
                         "\"battle\"",
                         ">=",
-                        "20"
+                        "Variable(BattleDuration)"
                       ],
                       "subInstructions": []
                     }
@@ -5717,7 +5809,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "CannonsPlayer1",
                   "valueIteratorVariableName": "cannonId",
@@ -5812,7 +5904,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "CannonsPlayer2",
                   "valueIteratorVariableName": "cannonId",
@@ -5966,6 +6058,18 @@
                   "parameters": [
                     "UI_GameOver",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TextBattleTimer",
+                    "=",
+                    "\"\""
                   ],
                   "subInstructions": []
                 },
