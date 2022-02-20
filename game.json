@@ -2536,7 +2536,7 @@
       ],
       "animations": [
         {
-          "name": "BulletPlayer1",
+          "name": "Player1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2565,7 +2565,7 @@
           ]
         },
         {
-          "name": "BulletPlayer2",
+          "name": "Player2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2594,7 +2594,7 @@
           ]
         },
         {
-          "name": "BulletOnCollisionPlayer1",
+          "name": "Player1Collision",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2674,7 +2674,7 @@
           ]
         },
         {
-          "name": "BulletOnCollisionPlayer2",
+          "name": "Player2Collision",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2876,7 +2876,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "CannomAimPlayer1",
+          "name": "Player1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -3119,7 +3119,7 @@
           ]
         },
         {
-          "name": "CannomAimPlayer2",
+          "name": "Player2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -3434,6 +3434,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/shoot"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/destroybullet"
     }
   ],
   "eventsFunctionsExtensions": [

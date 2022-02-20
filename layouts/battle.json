@@ -859,7 +859,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "CorePlayer1",
+          "name": "Player1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1042,7 +1042,7 @@
           ]
         },
         {
-          "name": "CorePlayer2",
+          "name": "Player2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2047,6 +2047,50 @@
       "emitterForceMin": 100,
       "flow": 45,
       "maxParticleNb": 10,
+      "name": "BulletParticlePlayer2",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 10,
+      "particleAngle2": 20,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 243,
+      "particleBlue2": 255,
+      "particleGravityX": 0,
+      "particleGravityY": 10,
+      "particleGreen1": 181,
+      "particleGreen2": 199,
+      "particleLifeTimeMax": 0.699999988079071,
+      "particleLifeTimeMin": 0.30000001192092896,
+      "particleRed1": 243,
+      "particleRed2": 255,
+      "particleSize1": 200,
+      "particleSize2": 10,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 2,
+      "rendererParam2": 2,
+      "rendererType": "Line",
+      "tags": "",
+      "tank": 10,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 1,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 150,
+      "emitterForceMin": 100,
+      "flow": 45,
+      "maxParticleNb": 10,
       "name": "BulletParticle",
       "particleAlpha1": 204,
       "particleAlpha2": 0,
@@ -2164,6 +2208,17 @@
           },
           "parameters": [
             "UI_GameOver"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Core",
+            "Core.VariableString(Player)"
           ],
           "subInstructions": []
         }
@@ -4713,31 +4768,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "BulletParticle",
-                            "Bullet.CenterX()",
-                            "Bullet.CenterY()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "PlaySoundCanal"
                           },
                           "parameters": [
@@ -4751,7 +4781,17 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Link",
+                          "include": {
+                            "includeConfig": 0
+                          },
+                          "target": "DestroyBullet"
+                        }
+                      ]
                     },
                     {
                       "disabled": false,
@@ -4777,31 +4817,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "BulletParticle",
-                            "Bullet.CenterX()",
-                            "Bullet.CenterY()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "ModVarObjet"
                           },
                           "parameters": [
@@ -4813,7 +4828,17 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Link",
+                          "include": {
+                            "includeConfig": 0
+                          },
+                          "target": "DestroyBullet"
+                        }
+                      ]
                     },
                     {
                       "disabled": false,
@@ -4836,31 +4861,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "BulletParticle",
-                            "Bullet.CenterX()",
-                            "Bullet.CenterY()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Bullet",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
                         {
                           "type": {
                             "inverted": false,
@@ -4890,7 +4890,17 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Link",
+                          "include": {
+                            "includeConfig": 0
+                          },
+                          "target": "DestroyBullet"
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
