@@ -2510,60 +2510,6 @@
         "name": "NewObject2-1-0.png",
         "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/letter-a-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\letter-a-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/letter-s-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\letter-s-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/letter-d-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\letter-d-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/arrow-up-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\arrow-up-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/letter-w-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\letter-w-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/letter-w-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprites\\letter-w-1-0.png",
-        "smoothed": false,
-        "userAdded": false
       }
     ],
     "resourceFolders": []
