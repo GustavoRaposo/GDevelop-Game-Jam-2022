@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.3900000000000008,
+    "zoomFactor": 1.2399999999999982,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2210,48 +2210,6 @@
       "variables": [],
       "effects": [],
       "behaviors": []
-    },
-    {
-      "name": "GlobalLight",
-      "tags": "",
-      "type": "Lighting::LightObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "radius": 400,
-        "color": "255;255;255",
-        "debugMode": false,
-        "texture": ""
-      }
-    },
-    {
-      "name": "CoreLightPlayer2",
-      "tags": "",
-      "type": "Lighting::LightObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "radius": 200,
-        "color": "255;125;184",
-        "debugMode": false,
-        "texture": ""
-      }
-    },
-    {
-      "name": "CoreLightPlayer1",
-      "tags": "",
-      "type": "Lighting::LightObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "radius": 200,
-        "color": "131;105;247",
-        "debugMode": false,
-        "texture": ""
-      }
     },
     {
       "height": 16,

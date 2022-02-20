@@ -3480,6 +3480,48 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "name": "GlobalLight",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 400,
+        "color": "255;255;255",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "name": "CoreLightPlayer2",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 200,
+        "color": "255;125;184",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "name": "CoreLightPlayer1",
+      "tags": "",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 200,
+        "color": "131;105;247",
+        "debugMode": false,
+        "texture": ""
+      }
     }
   ],
   "objectsGroups": [],
