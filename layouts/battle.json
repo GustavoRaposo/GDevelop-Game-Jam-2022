@@ -5098,7 +5098,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5298,7 +5298,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5382,14 +5382,14 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": true,
+                          "folded": false,
                           "name": "Player 1 - Inputs",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
                           "events": [
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5502,7 +5502,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5615,7 +5615,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5661,7 +5661,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5714,7 +5714,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": true,
+                          "folded": false,
                           "name": "Player 2 - Inputs",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -6051,14 +6051,14 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Collisions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -6263,7 +6263,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -6284,7 +6284,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::ForEach",
                       "object": "BlockCannon",
                       "conditions": [
@@ -6329,6 +6329,27 @@
                             {
                               "disabled": false,
                               "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "\"indexToRemove\"",
+                                    "=",
+                                    "-1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::ForEachChildVariable",
                               "iterableVariableName": "CannonsPlayer1",
                               "valueIteratorVariableName": "cannonId",
@@ -6351,11 +6372,57 @@
                                 {
                                   "type": {
                                     "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "indexToRemove",
+                                    "=",
+                                    "Variable(index)"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "DebuggerTools::ConsoleLog"
+                                  },
+                                  "parameters": [
+                                    "\"Cannon (\" + BlockCannon.VariableString(ID) + \") Index: \" + VariableString(indexToRemove) ",
+                                    "",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": true,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "indexToRemove",
+                                    ">",
+                                    "-1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
                                     "value": "SceneVariableRemoveAt"
                                   },
                                   "parameters": [
                                     "CannonsPlayer1",
-                                    "index"
+                                    "indexToRemove"
                                   ],
                                   "subInstructions": []
                                 },
@@ -6365,14 +6432,23 @@
                                     "value": "ModVarScene"
                                   },
                                   "parameters": [
-                                    "SelectedCannonPlayer1",
+                                    "\"indexToRemove\"",
                                     "=",
-                                    "0"
+                                    "-1"
                                   ],
                                   "subInstructions": []
                                 }
                               ],
                               "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::JsCode",
+                              "inlineCode": "if (runtimeScene.getVariables().get('indexToRemove').getAsNumber() > -1) {\n    runtimeScene.getVariables().get('CannonsPlayer1').getAllChildrenArray().splice(runtimeScene.getVariables().get('indexToRemove').getAsNumber(), 1);\n\n    if (runtimeScene.getVariables().get('SelectedCannonPlayer1').getAsNumber() == runtimeScene.getVariables().get('indexToRemove').getAsNumber()) {\n        runtimeScene.getVariables().get('SelectedCannonPlayer1').setNumber(0)\n    }\n\n    runtimeScene.getVariables().get('indexToRemove').setNumber(-1);\n}",
+                              "parameterObjects": "",
+                              "useStrict": true,
+                              "eventsSheetExpanded": false
                             },
                             {
                               "disabled": false,
@@ -6399,11 +6475,12 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "SceneVariableRemoveAt"
+                                    "value": "ModVarScene"
                                   },
                                   "parameters": [
-                                    "CannonsPlayer2",
-                                    "index"
+                                    "indexToRemove",
+                                    "=",
+                                    "Variable(index)"
                                   ],
                                   "subInstructions": []
                                 },
@@ -6421,6 +6498,60 @@
                                 }
                               ],
                               "events": []
+                            },
+                            {
+                              "disabled": true,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "indexToRemove",
+                                    ">",
+                                    "-1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SceneVariableRemoveAt"
+                                  },
+                                  "parameters": [
+                                    "CannonsPlayer2",
+                                    "indexToRemove"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "\"indexToRemove\"",
+                                    "=",
+                                    "-1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::JsCode",
+                              "inlineCode": "if (runtimeScene.getVariables().get('indexToRemove').getAsNumber() > -1) {\n    runtimeScene.getVariables().get('CannonsPlayer2').getAllChildrenArray().splice(runtimeScene.getVariables().get('indexToRemove').getAsNumber(), 1);\n\n    if (runtimeScene.getVariables().get('SelectedCannonPlayer2').getAsNumber() == runtimeScene.getVariables().get('indexToRemove').getAsNumber()) {\n        runtimeScene.getVariables().get('SelectedCannonPlayer2').setNumber(0)\n    }\n\n    runtimeScene.getVariables().get('indexToRemove').setNumber(-1);\n}",
+                              "parameterObjects": "",
+                              "useStrict": true,
+                              "eventsSheetExpanded": false
                             },
                             {
                               "disabled": false,
