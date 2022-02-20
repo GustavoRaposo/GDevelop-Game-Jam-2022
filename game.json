@@ -2958,6 +2958,11 @@
           "name": "Cooldown",
           "type": "number",
           "value": 0.7
+        },
+        {
+          "name": "Speed",
+          "type": "number",
+          "value": 180
         }
       ],
       "effects": [

@@ -194,7 +194,7 @@
     {
       "name": "BlockSpeed",
       "type": "number",
-      "value": 0.17
+      "value": 0.2
     },
     {
       "name": "BlockMoveDIstance",
@@ -383,7 +383,12 @@
     {
       "name": "BlockSpeedMultiplier",
       "type": "number",
-      "value": 0.7
+      "value": 0.85
+    },
+    {
+      "name": "ShootForce",
+      "type": "string",
+      "value": "2.4"
     }
   ],
   "instances": [
@@ -5088,14 +5093,14 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5115,7 +5120,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5315,7 +5320,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5369,7 +5374,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Inputs",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5399,7 +5404,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": false,
+                          "folded": true,
                           "name": "Player 1 - Inputs",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -5472,7 +5477,7 @@
                                       },
                                       "parameters": [
                                         "CannonAim",
-                                        "-100",
+                                        "-CannonAim.Variable(Speed)",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -5585,7 +5590,7 @@
                                       },
                                       "parameters": [
                                         "CannonAim",
-                                        "100",
+                                        "CannonAim.Variable(Speed)",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -5731,14 +5736,14 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": false,
+                          "folded": true,
                           "name": "Player 2 - Inputs",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
                           "events": [
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5804,7 +5809,7 @@
                                       },
                                       "parameters": [
                                         "CannonAim",
-                                        "100",
+                                        "CannonAim.Variable(Speed)",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -5851,7 +5856,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": true,
+                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5917,7 +5922,7 @@
                                       },
                                       "parameters": [
                                         "CannonAim",
-                                        "-100",
+                                        "-CannonAim.Variable(Speed)",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -6280,7 +6285,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {

@@ -76,7 +76,7 @@
                 "Bullet",
                 "Physics2",
                 "CannonAim.Angle()",
-                "2",
+                "Variable(ShootForce)",
                 "1",
                 "1"
               ],
@@ -189,7 +189,7 @@
                 "Bullet",
                 "Physics2",
                 "CannonAim.Angle()-180",
-                "2",
+                "Variable(ShootForce)",
                 "1",
                 "1"
               ],
