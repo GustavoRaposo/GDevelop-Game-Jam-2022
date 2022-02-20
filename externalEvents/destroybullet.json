@@ -33,7 +33,7 @@
             "BulletParticle",
             "Bullet.CenterX()",
             "Bullet.CenterY()",
-            ""
+            "\"Particle\""
           ],
           "subInstructions": []
         }
@@ -70,7 +70,7 @@
             "BulletParticlePlayer2",
             "Bullet.CenterX()",
             "Bullet.CenterY()",
-            ""
+            "\"Particle\""
           ],
           "subInstructions": []
         }
