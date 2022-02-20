@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0150000000000057,
+    "zoomFactor": 2.964999999999999,
     "windowMask": false
   },
   "objectsGroups": [
@@ -297,11 +297,6 @@
       "name": "Winner",
       "type": "string",
       "value": ""
-    },
-    {
-      "name": "Pause",
-      "type": "boolean",
-      "value": false
     }
   ],
   "instances": [
@@ -2236,7 +2231,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Build Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3804,7 +3799,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Battle Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5343,11 +5338,24 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "EnableEffect"
                       },
                       "parameters": [
                         "BlockCannon",
-                        "\"BlockCannon\""
+                        "\"Selected\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "EnableEffect"
+                      },
+                      "parameters": [
+                        "CannonAim",
+                        "\"Selected\"",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -5356,7 +5364,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "CannonsPlayer1",
                   "valueIteratorVariableName": "cannonId",
@@ -5400,11 +5408,47 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SetAnimationName"
+                            "value": "EnableEffect"
                           },
                           "parameters": [
                             "BlockCannon",
-                            "\"BlockCannon_Selected\""
+                            "\"Selected\"",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "CannonAim",
+                            "ID",
+                            "=",
+                            "Variable(cannonId)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EnableEffect"
+                          },
+                          "parameters": [
+                            "CannonAim",
+                            "\"Selected\"",
+                            "yes"
                           ],
                           "subInstructions": []
                         }
@@ -5415,7 +5459,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "CannonsPlayer2",
                   "valueIteratorVariableName": "cannonId",
@@ -5459,11 +5503,47 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SetAnimationName"
+                            "value": "EnableEffect"
                           },
                           "parameters": [
                             "BlockCannon",
-                            "\"BlockCannon_Selected\""
+                            "\"Selected\"",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "CannonAim",
+                            "ID",
+                            "=",
+                            "Variable(cannonId)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EnableEffect"
+                          },
+                          "parameters": [
+                            "CannonAim",
+                            "\"Selected\"",
+                            "yes"
                           ],
                           "subInstructions": []
                         }
@@ -5485,7 +5565,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game Over Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5621,116 +5701,6 @@
                     "",
                     "\"Battle\"",
                     "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Pause",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "Space"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ToggleSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "Pause"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "Pause",
-                    "False"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeTimeScale"
-                  },
-                  "parameters": [
-                    "",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "Pause",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeTimeScale"
-                  },
-                  "parameters": [
-                    "",
-                    "0"
                   ],
                   "subInstructions": []
                 }

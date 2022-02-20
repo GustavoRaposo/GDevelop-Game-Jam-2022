@@ -155,6 +155,30 @@
                 "CannonAim.Variable(ID)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "BlockCannon",
+                "\"Selected\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "CannonAim",
+                "\"Selected\"",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []

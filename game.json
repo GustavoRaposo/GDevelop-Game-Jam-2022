@@ -2854,7 +2854,21 @@
           "value": 10
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Selected",
+          "doubleParameters": {
+            "distance": 10,
+            "innerStrength": 1,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "248;231;28"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -2944,7 +2958,21 @@
           "value": 0.5
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Selected",
+          "doubleParameters": {
+            "distance": 10,
+            "innerStrength": 1,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "248;231;28"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -3510,6 +3538,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/destroybullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/selectcannon"
     }
   ],
   "eventsFunctionsExtensions": [
