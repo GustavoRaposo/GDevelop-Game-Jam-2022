@@ -2916,7 +2916,7 @@
         {
           "name": "Health",
           "type": "number",
-          "value": 10
+          "value": 999999
         }
       ],
       "effects": [
@@ -3020,7 +3020,7 @@
         {
           "name": "Cooldown",
           "type": "number",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "name": "Speed",

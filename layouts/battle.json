@@ -281,6 +281,22 @@
         {
           "type": "string",
           "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
         }
       ]
     },
@@ -288,6 +304,22 @@
       "name": "TurnBlocksPlayer1",
       "type": "array",
       "children": [
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
         {
           "type": "string",
           "value": ""
@@ -349,6 +381,22 @@
         {
           "type": "string",
           "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
+        },
+        {
+          "type": "string",
+          "value": ""
         }
       ]
     },
@@ -360,7 +408,7 @@
     {
       "name": "MaxBlockNumberPerTurn",
       "type": "string",
-      "value": "8"
+      "value": "10"
     },
     {
       "name": "MaxBlockNumber",
@@ -2141,9 +2189,9 @@
           "effectType": "Glow",
           "name": "Effect",
           "doubleParameters": {
-            "distance": 15,
+            "distance": 10,
             "innerStrength": 1,
-            "outerStrength": 2
+            "outerStrength": 1
           },
           "stringParameters": {
             "color": "248;231;28"
@@ -3127,7 +3175,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "General Gameplay",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3467,6 +3515,18 @@
                 "Core",
                 "Tween",
                 "\"fadeIn\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Core",
+                "=",
+                "255"
               ],
               "subInstructions": []
             }
@@ -3812,7 +3872,7 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Repeat",
-                      "repeatExpression": "7",
+                      "repeatExpression": "Variable(MaxBlockNumberPerTurn)-1",
                       "conditions": [],
                       "actions": [
                         {
