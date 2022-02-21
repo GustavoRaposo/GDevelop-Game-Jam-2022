@@ -2436,7 +2436,7 @@
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
-        "color": "228;228;228",
+        "color": "255;255;255",
         "fontFamily": "assets\\fonts\\Retron2000.ttf",
         "align": "left",
         "wordWrap": true
@@ -2454,7 +2454,7 @@
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
-        "color": "228;228;228",
+        "color": "255;255;255",
         "fontFamily": "assets\\fonts\\Retron2000.ttf",
         "align": "center",
         "wordWrap": true
@@ -2472,7 +2472,7 @@
         "opacity": 255,
         "fontSize": 64,
         "visible": true,
-        "color": "228;228;228",
+        "color": "255;255;255",
         "fontFamily": "assets\\fonts\\04B_30__.TTF",
         "align": "left",
         "wordWrap": true
@@ -2744,7 +2744,7 @@
         "opacity": 255,
         "fontSize": 9,
         "visible": true,
-        "color": "228;228;228",
+        "color": "255;255;255",
         "fontFamily": "assets\\fonts\\Retron2000.ttf",
         "align": "left",
         "wordWrap": true
@@ -2762,7 +2762,7 @@
         "opacity": 255,
         "fontSize": 9,
         "visible": true,
-        "color": "228;228;228",
+        "color": "255;255;255",
         "fontFamily": "assets\\fonts\\Retron2000.ttf",
         "align": "left",
         "wordWrap": true
