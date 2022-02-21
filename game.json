@@ -2584,6 +2584,24 @@
         "name": "assets\\sprites\\button-play.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/BlockAreaBorderLeft-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\BlockAreaBorderLeft-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/blocks-background-area.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\blocks-background-area.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
