@@ -407,7 +407,7 @@
     {
       "name": "BlockSpeedMultiplier",
       "type": "number",
-      "value": 0.9
+      "value": 1
     },
     {
       "name": "ShootForce",
@@ -3308,7 +3308,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Build Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
