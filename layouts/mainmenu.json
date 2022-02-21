@@ -1,16 +1,16 @@
 {
-  "b": 90,
+  "b": 71,
   "disableInputWhenNotFocused": true,
   "mangledName": "MainMenu",
   "name": "MainMenu",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 71,
+  "r": 57,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 60,
+  "v": 48,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.5320000073194504,
+    "zoomFactor": 1.332000007319451,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -48,44 +48,6 @@
           "value": "Credits"
         }
       ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "UI",
-      "locked": false,
-      "name": "Button",
-      "persistentUuid": "980a4c1a-8bbd-4aec-a3e2-72aa3d7e06f9",
-      "width": 64,
-      "x": 208,
-      "y": 224,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Option",
-          "type": "string",
-          "value": "Play"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "UI",
-      "locked": false,
-      "name": "PlayIcon",
-      "persistentUuid": "c0a015b3-fd9e-422e-810c-86ebef0a28ea",
-      "width": 64,
-      "x": 208,
-      "y": 240,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     },
     {
       "angle": 0,
@@ -121,86 +83,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "height": 80,
-      "layer": "UI",
-      "locked": false,
-      "name": "Title",
-      "persistentUuid": "864d70ad-1377-46e4-b4a7-263d6a63f665",
-      "width": 336,
-      "x": 96,
-      "y": 32,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 16,
-      "layer": "",
-      "locked": false,
-      "name": "tileBackgroung",
-      "persistentUuid": "9bc22f3c-7d65-4bc3-9a7e-b502b64c6b68",
-      "width": 480,
-      "x": 0,
-      "y": 0,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 288,
-      "layer": "",
-      "locked": false,
-      "name": "tileBackgroung",
-      "persistentUuid": "e1b1a244-a2fa-40b4-afa7-57bfe9eb7dec",
-      "width": 16,
-      "x": 464,
-      "y": 16,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 16,
-      "layer": "",
-      "locked": false,
-      "name": "tileBackgroung",
-      "persistentUuid": "9f7f9ce1-d2cb-44db-b85a-413b460a5d63",
-      "width": 480,
-      "x": 0,
-      "y": 304,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 288,
-      "layer": "",
-      "locked": false,
-      "name": "tileBackgroung",
-      "persistentUuid": "7265821e-c5ef-40e3-bdad-d4168f93db70",
-      "width": 16,
-      "x": 0,
-      "y": 16,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "UI",
@@ -208,8 +90,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "1093063f-ca2e-4a35-a94a-0d9c2767c87a",
       "width": 0,
-      "x": 128,
-      "y": 208,
+      "x": 109,
+      "y": 224,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -224,8 +106,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "9395d027-a428-4db7-9a13-da3ee80bac28",
       "width": 0,
-      "x": 144,
-      "y": 208,
+      "x": 125,
+      "y": 224,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -240,8 +122,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "2b639eee-8890-4bf4-998a-ca5aaf9d75c8",
       "width": 0,
-      "x": 160,
-      "y": 208,
+      "x": 141,
+      "y": 224,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -256,8 +138,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "64b695fe-903c-442f-ba86-aa4ba869c5fd",
       "width": 0,
-      "x": 144,
-      "y": 192,
+      "x": 125,
+      "y": 208,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -272,8 +154,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "f4c39c85-0ae4-4168-9d90-25d6e1f3a2e0",
       "width": 0,
-      "x": 144,
-      "y": 240,
+      "x": 125,
+      "y": 256,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -288,8 +170,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "7677b761-a9a3-4296-85a5-cbac345005dc",
       "width": 0,
-      "x": 128,
-      "y": 256,
+      "x": 109,
+      "y": 272,
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
@@ -304,8 +186,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "dcc003a2-6152-47cf-84ab-95a359b1bb47",
       "width": 0,
-      "x": 144,
-      "y": 256,
+      "x": 125,
+      "y": 272,
       "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
@@ -320,8 +202,8 @@
       "name": "tileBackgroung",
       "persistentUuid": "5b194f42-5054-4eda-9c65-1a4234b6a75c",
       "width": 0,
-      "x": 160,
-      "y": 256,
+      "x": 141,
+      "y": 272,
       "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
@@ -336,8 +218,8 @@
       "name": "Player1",
       "persistentUuid": "529b9e98-d3a4-4d71-826e-18ad6a692d0b",
       "width": 0,
-      "x": 48,
-      "y": 208,
+      "x": 29,
+      "y": 224,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -352,8 +234,8 @@
       "name": "Player2",
       "persistentUuid": "825ca12a-4ee6-40a7-934e-fbef7e6e24f2",
       "width": 0,
-      "x": 48,
-      "y": 256,
+      "x": 29,
+      "y": 272,
       "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
@@ -368,8 +250,8 @@
       "name": "A",
       "persistentUuid": "f283651d-378e-426d-aca1-5c4e5e1d7cd2",
       "width": 0,
-      "x": 128,
-      "y": 208,
+      "x": 109,
+      "y": 224,
       "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
@@ -384,8 +266,8 @@
       "name": "W",
       "persistentUuid": "1f13f6b0-7e1c-49f2-bf84-db3a2dc5741a",
       "width": 0,
-      "x": 144,
-      "y": 192,
+      "x": 125,
+      "y": 208,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -400,8 +282,8 @@
       "name": "S",
       "persistentUuid": "a73af741-c572-4c06-a9b7-d039d97f48ce",
       "width": 0,
-      "x": 144,
-      "y": 208,
+      "x": 125,
+      "y": 224,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -416,8 +298,8 @@
       "name": "D",
       "persistentUuid": "4220a485-4be6-47b7-8b77-40f7c2218ae5",
       "width": 0,
-      "x": 160,
-      "y": 208,
+      "x": 141,
+      "y": 224,
       "zOrder": 36,
       "numberProperties": [],
       "stringProperties": [],
@@ -432,8 +314,8 @@
       "name": "Arrow",
       "persistentUuid": "9b38f210-9d99-4517-9f13-4d2547f182fa",
       "width": 0,
-      "x": 144,
-      "y": 240,
+      "x": 125,
+      "y": 256,
       "zOrder": 37,
       "numberProperties": [],
       "stringProperties": [],
@@ -448,8 +330,8 @@
       "name": "Arrow",
       "persistentUuid": "60541fe9-a0de-4e20-8bb6-0aeb8e42702d",
       "width": 0,
-      "x": 160,
-      "y": 256,
+      "x": 141,
+      "y": 272,
       "zOrder": 37,
       "numberProperties": [],
       "stringProperties": [],
@@ -464,8 +346,8 @@
       "name": "Arrow",
       "persistentUuid": "e060b52d-2f1a-4cd6-8d94-dd1b65d22923",
       "width": 0,
-      "x": 144,
-      "y": 256,
+      "x": 125,
+      "y": 272,
       "zOrder": 37,
       "numberProperties": [],
       "stringProperties": [],
@@ -480,9 +362,41 @@
       "name": "Arrow",
       "persistentUuid": "5b9160bf-2f66-4b67-95d0-27a226e5664a",
       "width": 0,
-      "x": 128,
-      "y": 256,
+      "x": 109,
+      "y": 272,
       "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "GameTitle",
+      "persistentUuid": "108abe29-4713-4a08-9f46-5318d3a6d346",
+      "width": 0,
+      "x": 64,
+      "y": 32,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "ButtonPlay",
+      "persistentUuid": "1982e943-f08a-4554-a092-db537be6f624",
+      "width": 0,
+      "x": 226,
+      "y": 220,
+      "zOrder": 39,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -496,7 +410,7 @@
       "name": "Button",
       "rightMargin": 8,
       "tags": "",
-      "texture": "assets\\sprites\\PlayButton-1.png",
+      "texture": "assets\\sprites\\Button-1.png",
       "tiled": true,
       "topMargin": 8,
       "type": "PanelSpriteObject::PanelSprite",
@@ -1125,9 +1039,9 @@
       "font": "assets\\fonts\\Retron2000.ttf",
       "characterSize": 15,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -1145,9 +1059,9 @@
       "font": "assets\\fonts\\Retron2000.ttf",
       "characterSize": 15,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -1391,6 +1305,92 @@
         "debugMode": false,
         "texture": ""
       }
+    },
+    {
+      "name": "GameTitle",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\game-title.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ButtonPlay",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Option",
+          "type": "string",
+          "value": "Play"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\button-play.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -1581,9 +1581,89 @@
             ""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "\"252;234;116\""
+          ],
+          "subInstructions": []
         }
       ],
       "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "ButtonPlay",
+                "Option",
+                "=",
+                "\"Play\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Battle\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
@@ -1617,41 +1697,6 @@
       ],
       "actions": [],
       "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "Button",
-                "Option",
-                "=",
-                "\"Play\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Battle\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
         {
           "disabled": false,
           "folded": false,

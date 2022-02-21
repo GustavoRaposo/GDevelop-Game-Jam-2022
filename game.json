@@ -2566,6 +2566,24 @@
         "name": "assets\\sprites\\arrow-up-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/game-title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\game-title.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/button-play.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\button-play.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
