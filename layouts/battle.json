@@ -119,6 +119,9 @@
         },
         {
           "name": "TextPlayerAgain"
+        },
+        {
+          "name": "ButtonPlayAgain"
         }
       ]
     },
@@ -2021,7 +2024,7 @@
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextBattleTurnDescription",
       "smoothed": true,
@@ -2041,7 +2044,7 @@
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextGameOverWinner",
       "smoothed": true,
@@ -2053,15 +2056,15 @@
       "behaviors": [],
       "string": "<Player> Won!",
       "font": "assets\\fonts\\Retron2000.ttf",
-      "characterSize": 16,
+      "characterSize": 24,
       "color": {
-        "b": 228,
-        "g": 228,
-        "r": 228
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextBuildTurnDescription",
       "smoothed": true,
@@ -2075,13 +2078,13 @@
       "font": "assets\\fonts\\Retron2000.ttf",
       "characterSize": 16,
       "color": {
-        "b": 228,
-        "g": 228,
-        "r": 228
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextBattleTurn",
       "smoothed": true,
@@ -2089,19 +2092,43 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": -5,
+            "blueY": -5,
+            "direction": 10,
+            "fillMode": 1,
+            "greenX": 0,
+            "greenY": 0,
+            "minSize": 0,
+            "offset": 3,
+            "redX": 5,
+            "redY": 5,
+            "sampleSize": 3,
+            "slices": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": true
+          }
+        }
+      ],
       "behaviors": [],
-      "string": "Battle Turn",
+      "string": "Battle",
       "font": "assets\\fonts\\04B_30__.TTF",
-      "characterSize": 42,
+      "characterSize": 80,
       "color": {
-        "b": 228,
-        "g": 228,
-        "r": 228
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextGameOver",
       "smoothed": true,
@@ -2109,19 +2136,33 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 15,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "248;231;28"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "string": "Game Over",
       "font": "assets\\fonts\\04B_30__.TTF",
-      "characterSize": 42,
+      "characterSize": 52,
       "color": {
-        "b": 228,
-        "g": 228,
-        "r": 228
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "TextBuildTurn",
       "smoothed": true,
@@ -2131,28 +2172,33 @@
       "variables": [],
       "effects": [
         {
-          "effectType": "DropShadow",
+          "effectType": "Glitch",
           "name": "Effect",
           "doubleParameters": {
-            "alpha": 1,
-            "blur": 2,
-            "distance": 1,
-            "padding": 0,
-            "quality": 3,
-            "rotation": 0
+            "animationFrequency": 60,
+            "blueX": -5,
+            "blueY": -5,
+            "direction": 10,
+            "fillMode": 1,
+            "greenX": 0,
+            "greenY": 0,
+            "minSize": 0,
+            "offset": 3,
+            "redX": 5,
+            "redY": 5,
+            "sampleSize": 3,
+            "slices": 0
           },
-          "stringParameters": {
-            "color": "#000000"
-          },
+          "stringParameters": {},
           "booleanParameters": {
-            "shadowOnly": false
+            "average": true
           }
         }
       ],
       "behaviors": [],
-      "string": "Build Turn",
+      "string": "Build",
       "font": "assets\\fonts\\04B_30__.TTF",
-      "characterSize": 48,
+      "characterSize": 80,
       "color": {
         "b": 255,
         "g": 255,
@@ -2772,6 +2818,46 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "name": "ButtonPlayAgain",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ButtonPlayAgain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprites\\ButtonPlayAgain-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -2792,7 +2878,7 @@
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2961,18 +3047,6 @@
               },
               "parameters": [
                 "Core",
-                "\"Glow_\" + Core.VariableString(Player)",
-                "yes"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "EnableEffect"
-              },
-              "parameters": [
-                "Core",
                 "\"Glow_Player1\"",
                 ""
               ],
@@ -2987,6 +3061,18 @@
                 "Core",
                 "\"Glow_Player2\"",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "Core",
+                "\"Glow_\" + Core.VariableString(Player)",
+                "yes"
               ],
               "subInstructions": []
             },
@@ -7115,7 +7201,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game Over Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7245,7 +7331,7 @@
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "ButtonPlay",
+                    "ButtonPlayAgain",
                     "",
                     "",
                     ""

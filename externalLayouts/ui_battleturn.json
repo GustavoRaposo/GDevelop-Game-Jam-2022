@@ -3,7 +3,7 @@
   "name": "UI_BattleTurn",
   "instances": [
     {
-      "angle": 6.518784999847412,
+      "angle": 5.920537948608398,
       "customSize": false,
       "height": 0,
       "layer": "UI",
@@ -11,8 +11,8 @@
       "name": "TextBattleTurn",
       "persistentUuid": "33724eed-9d80-4313-ba05-1bcf7eb3f274",
       "width": 0,
-      "x": 63.243370056152344,
-      "y": 85.88237762451172,
+      "x": 41.24809646606445,
+      "y": 86.55281829833984,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -27,7 +27,7 @@
       "name": "TextBattleTurnDescription",
       "persistentUuid": "722c796f-9f78-4912-b814-28f4a4fa2050",
       "width": 0,
-      "x": 101,
+      "x": 88,
       "y": 205,
       "zOrder": 1,
       "numberProperties": [],
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1,
+    "zoomFactor": 1.1499999999999995,
     "windowMask": false
   }
 }

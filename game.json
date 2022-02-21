@@ -2602,6 +2602,15 @@
         "name": "assets\\blocks-background-area.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/ButtonPlayAgain-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\ButtonPlayAgain-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3570,7 +3579,7 @@
     {
       "name": "TurnTransitionInterval",
       "type": "number",
-      "value": 3
+      "value": 4
     },
     {
       "name": "Debug",

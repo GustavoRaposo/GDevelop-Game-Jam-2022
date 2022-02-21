@@ -11,8 +11,8 @@
       "name": "TextBuildTurn",
       "persistentUuid": "a67ebeba-a770-4ca3-968f-087eaad3d01b",
       "width": 0,
-      "x": 62.41149139404297,
-      "y": 91.27066040039062,
+      "x": 88.86593627929688,
+      "y": 91.64289855957031,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -27,7 +27,7 @@
       "name": "TextBuildTurnDescription",
       "persistentUuid": "7c0c5036-2a22-4ea4-8dbf-861109e89d44",
       "width": 0,
-      "x": 73,
+      "x": 64,
       "y": 205,
       "zOrder": 1,
       "numberProperties": [],
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2249999999999994,
+    "zoomFactor": 1.374999999999999,
     "windowMask": false
   }
 }
