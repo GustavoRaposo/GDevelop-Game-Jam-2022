@@ -7673,7 +7673,7 @@
               "parameters": [
                 "DarkOverlay",
                 "=",
-                "100"
+                "150"
               ],
               "subInstructions": []
             },

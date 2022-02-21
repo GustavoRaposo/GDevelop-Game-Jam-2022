@@ -12,7 +12,7 @@
   "title": "",
   "v": 48,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 16,
     "gridHeight": 16,
@@ -20,35 +20,13 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
+    "snap": true,
     "zoomFactor": 1.332000007319451,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "UI",
-      "locked": false,
-      "name": "Button",
-      "persistentUuid": "b09f045d-1916-4877-b9e7-385743165533",
-      "width": 64,
-      "x": 384,
-      "y": 224,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Option",
-          "type": "string",
-          "value": "Credits"
-        }
-      ]
-    },
     {
       "angle": 0,
       "customSize": false,
@@ -58,8 +36,8 @@
       "name": "Credits",
       "persistentUuid": "0eff74cd-ea8c-4349-927a-ee258c46dee4",
       "width": 0,
-      "x": 400,
-      "y": 240,
+      "x": 416,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -378,8 +356,8 @@
       "name": "GameTitle",
       "persistentUuid": "108abe29-4713-4a08-9f46-5318d3a6d346",
       "width": 0,
-      "x": 64,
-      "y": 32,
+      "x": 240,
+      "y": 96,
       "zOrder": 38,
       "numberProperties": [],
       "stringProperties": [],
@@ -410,7 +388,7 @@
       "name": "Button",
       "rightMargin": 8,
       "tags": "",
-      "texture": "assets\\sprites\\Button-1.png",
+      "texture": "",
       "tiled": true,
       "topMargin": 8,
       "type": "PanelSpriteObject::PanelSprite",
@@ -1313,7 +1291,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -1329,14 +1312,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 176,
+                    "y": 64
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 178.6857147216797,
+                    "y": 67.71428680419922
                   },
                   "customCollisionMask": []
                 }
@@ -1359,7 +1342,12 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -1581,17 +1569,6 @@
             ""
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "ButtonPlay",
-            "\"252;234;116\""
-          ],
-          "subInstructions": []
         }
       ],
       "events": []
@@ -1626,44 +1603,21 @@
           "subInstructions": []
         }
       ],
-      "actions": [],
-      "events": [
+      "actions": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "ButtonPlay",
-                "Option",
-                "=",
-                "\"Play\""
-              ],
-              "subInstructions": []
-            }
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Battle\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "subInstructions": []
         }
-      ]
+      ],
+      "events": []
     },
     {
       "disabled": false,
@@ -1687,7 +1641,7 @@
             "value": "SourisSurObjet"
           },
           "parameters": [
-            "Button",
+            "Credits",
             "",
             "",
             ""
@@ -1695,79 +1649,437 @@
           "subInstructions": []
         }
       ],
-      "actions": [],
-      "events": [
+      "actions": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Credits\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": false,
+      "name": "Animations",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Play Button",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::Exists"
+              },
+              "parameters": [
+                "ButtonPlay",
+                "Tween",
+                "\"green\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "VarObjetTxt"
+                "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Button",
-                "Option",
-                "=",
-                "\"Credits\""
+                "ButtonPlay",
+                "Tween",
+                "\"green\""
               ],
               "subInstructions": []
             }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Credits\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "Button",
-                "Option",
-                "=",
-                "\"Tutorial\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Tutorial\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
         }
-      ]
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectColorTween"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"pink\"",
+            "\"255;128;167\"",
+            "\"linear\"",
+            "1000",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"pink\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectColorTween"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"blue\"",
+            "\"128;128;255\"",
+            "\"linear\"",
+            "1000",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"blue\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectColorTween"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"yellow\"",
+            "\"255;208;112\"",
+            "\"linear\"",
+            "1000",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"yellow\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectColorTween"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"red\"",
+            "\"255;112;112\"",
+            "\"linear\"",
+            "1000",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"red\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectColorTween"
+          },
+          "parameters": [
+            "ButtonPlay",
+            "Tween",
+            "\"green\"",
+            "\"96;255;128\"",
+            "\"linear\"",
+            "1000",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Title",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::Exists"
+              },
+              "parameters": [
+                "GameTitle",
+                "Tween",
+                "\"scaleDown\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "GameTitle",
+                "Tween",
+                "\"scaleDown\""
+              ],
+              "subInstructions": []
+            }
+          ]
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectScaleTween"
+          },
+          "parameters": [
+            "GameTitle",
+            "Tween",
+            "\"scaleUp\"",
+            "1.15",
+            "1.15",
+            "\"easeInOutQuad\"",
+            "3000",
+            "",
+            "yes"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "GameTitle",
+            "Tween",
+            "\"scaleUp\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectScaleTween"
+          },
+          "parameters": [
+            "GameTitle",
+            "Tween",
+            "\"scaleDown\"",
+            "0.9",
+            "0.9",
+            "\"easeInOutQuad\"",
+            "3000",
+            "",
+            "yes"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ],
   "layers": [
@@ -1824,6 +2136,10 @@
       "gravityY": 9.8,
       "scaleX": 100,
       "scaleY": 100
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
