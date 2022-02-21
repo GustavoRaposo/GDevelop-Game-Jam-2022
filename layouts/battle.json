@@ -197,7 +197,7 @@
     {
       "name": "BlockSpeed",
       "type": "number",
-      "value": 0.2
+      "value": 0.17
     },
     {
       "name": "BlockMoveDIstance",
