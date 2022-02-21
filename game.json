@@ -2962,7 +2962,7 @@
         {
           "name": "Speed",
           "type": "number",
-          "value": 180
+          "value": 150
         }
       ],
       "effects": [

@@ -407,7 +407,7 @@
     {
       "name": "BlockSpeedMultiplier",
       "type": "number",
-      "value": 0.85
+      "value": 0.9
     },
     {
       "name": "ShootForce",
@@ -3308,7 +3308,7 @@
       "colorR": 245,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Build Turn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5363,7 +5363,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5393,7 +5393,7 @@
                           "events": [
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5506,7 +5506,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5619,7 +5619,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5665,7 +5665,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5725,7 +5725,7 @@
                           "events": [
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -5838,7 +5838,7 @@
                             },
                             {
                               "disabled": false,
-                              "folded": false,
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -6111,7 +6111,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -6158,7 +6158,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -6288,7 +6288,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::ForEach",
                       "object": "BlockCannon",
                       "conditions": [
@@ -6310,7 +6310,7 @@
                       "events": [
                         {
                           "disabled": false,
-                          "folded": false,
+                          "folded": true,
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "CannonAim",
                           "conditions": [
@@ -7799,7 +7799,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
